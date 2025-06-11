@@ -1,0 +1,149 @@
+
+{
+  "categories": [
+    {
+      "id": "europe",
+      "name": "Europe",
+      "packages": [
+        {
+          "id": "paris-romance",
+          "name": "Paris Romance Getaway",
+          "image": "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+          "price": "€1,299",
+          "duration": "5 days / 4 nights",
+          "description": "Experience the magic of Paris with your loved one",
+          "includes": [
+            "4 nights at luxury hotel",
+            "Daily breakfast",
+            "Seine River cruise",
+            "Eiffel Tower dinner",
+            "Airport transfers"
+          ],
+          "availableDates": [
+            "March 15-19, 2025",
+            "April 12-16, 2025",
+            "May 10-14, 2025",
+            "June 7-11, 2025"
+          ]
+        },
+        {
+          "id": "italian-coast",
+          "name": "Italian Coast Adventure",
+          "image": "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
+          "price": "€1,899",
+          "duration": "8 days / 7 nights",
+          "description": "Discover the breathtaking Amalfi Coast and Cinque Terre",
+          "includes": [
+            "7 nights accommodation",
+            "Daily breakfast",
+            "Boat tours",
+            "Wine tasting experiences",
+            "Local guide services"
+          ],
+          "availableDates": [
+            "April 20-27, 2025",
+            "May 18-25, 2025",
+            "September 14-21, 2025",
+            "October 12-19, 2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tropical",
+      "name": "Tropical",
+      "packages": [
+        {
+          "id": "maldives-luxury",
+          "name": "Maldives Luxury Resort",
+          "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+          "price": "€3,499",
+          "duration": "7 days / 6 nights",
+          "description": "Ultimate luxury in overwater villas with crystal clear waters",
+          "includes": [
+            "6 nights overwater villa",
+            "All meals included",
+            "Spa treatments",
+            "Water sports activities",
+            "Seaplane transfers"
+          ],
+          "availableDates": [
+            "February 10-16, 2025",
+            "March 24-30, 2025",
+            "November 15-21, 2025",
+            "December 20-26, 2025"
+          ]
+        },
+        {
+          "id": "bali-cultural",
+          "name": "Bali Cultural Discovery",
+          "image": "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+          "price": "€1,699",
+          "duration": "10 days / 9 nights",
+          "description": "Immerse yourself in Balinese culture and natural beauty",
+          "includes": [
+            "9 nights boutique hotels",
+            "Daily breakfast",
+            "Temple tours",
+            "Cooking classes",
+            "Yoga sessions"
+          ],
+          "availableDates": [
+            "January 15-24, 2025",
+            "March 10-19, 2025",
+            "July 22-31, 2025",
+            "October 5-14, 2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure",
+      "packages": [
+        {
+          "id": "iceland-northern-lights",
+          "name": "Iceland Northern Lights",
+          "image": "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
+          "price": "€2,199",
+          "duration": "6 days / 5 nights",
+          "description": "Chase the Aurora Borealis in Iceland's dramatic landscapes",
+          "includes": [
+            "5 nights accommodation",
+            "Daily breakfast",
+            "Northern Lights tours",
+            "Blue Lagoon entry",
+            "Golden Circle tour"
+          ],
+          "availableDates": [
+            "January 20-25, 2025",
+            "February 17-22, 2025",
+            "November 10-15, 2025",
+            "December 15-20, 2025"
+          ]
+        },
+        {
+          "id": "patagonia-trek",
+          "name": "Patagonia Trekking",
+          "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+          "price": "€2,899",
+          "duration": "12 days / 11 nights",
+          "description": "Epic trekking adventure through Torres del Paine",
+          "includes": [
+            "11 nights accommodation",
+            "All meals",
+            "Professional guides",
+            "Trekking equipment",
+            "Transportation"
+          ],
+          "availableDates": [
+            "February 5-16, 2025",
+            "March 12-23, 2025",
+            "December 1-12, 2025",
+            "January 14-25, 2026"
+          ]
+        }
+      ]
+    }
+  ]
+}
