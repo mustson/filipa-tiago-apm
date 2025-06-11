@@ -33,6 +33,8 @@ const HeroSection = () => {
           {/* Enhanced gradient overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-900/30 to-transparent h-1/2"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent h-1/2 top-1/2"></div>
+          {/* Mobile gradient overlay - darker at top */}
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/95 via-blue-900/70 to-blue-900/30 sm:hidden"></div>
           
           <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
