@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { agentConfig } from '@/config';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../styles/hero.css';
 
@@ -29,7 +30,7 @@ const HeroSection = () => {
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
             <img 
-              src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=90"
+              src={agentConfig.heroImageUrl}
               alt="Paisagem de viagem"
               className="w-full h-full object-cover object-center"
               style={{
@@ -57,7 +58,7 @@ const HeroSection = () => {
                 <span className="relative inline-block px-4">
                   <span className="font-bold">aventura</span>
                   <ChalkUnderline />
-                </span> com o Bruno!
+                </span> com o {agentConfig.firstName}!
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light">

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { agentConfig } from '@/config';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
@@ -23,7 +24,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const phoneNumber = "934327708";
-    const message = `Olá Bruno,
+        const message = `Olá ${agentConfig.firstName},
 
 Nome: ${formData.name}
 Email: ${formData.email}
@@ -122,7 +123,7 @@ Mensagem: ${formData.message}`;
                   </div>
                   <div>
                       <h3 className="font-semibold text-gray-900 text-lg">LinkedIn</h3>
-                      <p className="text-gray-600 font-medium">Bruno Lopes</p>
+                      <p className="text-gray-600 font-medium">{agentConfig.fullName}</p>
                   </div>
                 </div>
               </a>

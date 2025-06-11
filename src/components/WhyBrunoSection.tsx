@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { agentConfig } from '@/config';
 
 const WhyBrunoSection = () => {
   const reasons = [
@@ -46,14 +47,14 @@ const WhyBrunoSection = () => {
       <div className="max-w-7xl mx-auto px-3 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6 hidden sm:block">
-            <span className="text-gray-900">Bruno trabalha com</span>
+            <span className="text-gray-900">{agentConfig.firstName} trabalha com</span>
             <br />
             <span className="gradient-text">os seus sonhos</span>
             <br />
             <span className="text-gray-900">não em vez deles.</span>
           </h2>
           <h2 className="text-5xl md:text-6xl title-font mb-6 sm:hidden">
-            <span className="text-gray-900">Bruno trabalha com</span>
+            <span className="text-gray-900">{agentConfig.firstName} trabalha com</span>
             <br />
             <span className="gradient-text">os seus sonhos</span>
             
@@ -62,7 +63,7 @@ const WhyBrunoSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
             Mais de uma década de excelência a criar experiências extraordinárias.
-            Descubra porque centenas de pessoas confiam na experiência do Bruno.
+            Descubra porque centenas de pessoas confiam na experiência do {agentConfig.firstName}.
           </p>
         </div>
 

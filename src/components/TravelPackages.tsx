@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { agentConfig } from '@/config';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
@@ -10,7 +11,7 @@ const TravelPackages = () => {
 
   const handleWhatsAppContact = (packageName: string) => {
     const phoneNumber = "934327708";
-    const message = `Olá Bruno, preciso de informações sobre o seu pacote de férias ${packageName}`;
+      const message = `Olá ${agentConfig.firstName}, preciso de informações sobre o seu pacote de férias ${packageName}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

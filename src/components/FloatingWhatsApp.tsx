@@ -1,12 +1,13 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import { agentConfig } from '@/config';
 
 const FloatingWhatsApp = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleWhatsAppContact = () => {
     const phoneNumber = "934327708";
-    const message = "Olá Bruno, gostaria de saber mais sobre os seus pacotes de viagem!";
+        const message = `Olá ${agentConfig.firstName}, gostaria de saber mais sobre os seus pacotes de viagem!`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -29,7 +30,7 @@ const FloatingWhatsApp = () => {
         
         {isHovered && (
           <div className="absolute right-28 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
-            Conversar com Bruno
+            Conversar com {agentConfig.firstName}
             <div className="absolute right-[-6px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-[6px] border-l-gray-900 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
           </div>
         )}

@@ -1,33 +1,33 @@
-
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { agentConfig } from '@/config';
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Maria Silva",
       location: "Lisboa",
-      text: "O Bruno organizou a nossa lua de mel em Santorini e foi simplesmente perfeito! Cada detalhe foi pensado ao pormenor. Recomendo vivamente!",
+            text: `O ${agentConfig.firstName} organizou a nossa lua de mel em Santorini e foi simplesmente perfeito! Cada detalhe foi pensado ao pormenor. Recomendo vivamente!`,
       rating: 5,
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
       name: "João Costa",
       location: "Porto",
-      text: "Viagem incrível para a Tailândia! O Bruno conseguiu criar um itinerário que superou todas as nossas expectativas. Serviço de primeira qualidade.",
+            text: `Viagem incrível para a Tailândia! O ${agentConfig.firstName} conseguiu criar um itinerário que superou todas as nossas expectativas. Serviço de primeira qualidade.`,
       rating: 5,
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
       name: "Ana Rodrigues",
       location: "Coimbra",
-      text: "Experiência única em Marrocos! O Bruno tem contactos locais fantásticos que nos proporcionaram experiências autênticas que nunca esqueceremos.",
+            text: `Experiência única em Marrocos! O ${agentConfig.firstName} tem contactos locais fantásticos que nos proporcionaram experiências autênticas que nunca esqueceremos.`,
       rating: 5,
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
       name: "Pedro Santos",
       location: "Faro",
-      text: "Viagem de sonho ao Japão! O Bruno cuidou de tudo, desde os voos até às experiências mais especiais. Profissionalismo exemplar!",
+            text: `Viagem de sonho ao Japão! O ${agentConfig.firstName} cuidou de tudo, desde os voos até às experiências mais especiais. Profissionalismo exemplar!`,
       rating: 5,
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80"
     }
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
             <span className="gradient-text">Inesquecíveis</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja o que dizem os nossos clientes sobre as suas viagens com o Bruno Lopes. 
+            Veja o que dizem os nossos clientes sobre as suas viagens com o {agentConfig.fullName}. 
             Cada testemunho é uma história de aventura e descoberta.
           </p>
         </div>
