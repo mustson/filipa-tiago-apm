@@ -15,7 +15,7 @@ const AboutSection = () => {
       </div>
 
       {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto bg-gray-900/60 backdrop-blur-lg rounded-3xl border border-white/10 p-8 sm:p-12 lg:p-16">
+                  <div className="relative z-10 w-[98%] sm:w-auto max-w-7xl mx-auto bg-gray-900/60 backdrop-blur-lg rounded-3xl border border-white/10 p-8 sm:p-12 lg:p-16">
         
         {/* Section Header (Consistent with other sections) */}
         <div className="text-center mb-16">
@@ -31,7 +31,7 @@ const AboutSection = () => {
 
         {/* Benefits Grid inside a card */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
             
             {/* Benefício 1 */}
             <div className="flex items-start space-x-4 text-white">
