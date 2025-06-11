@@ -18,10 +18,10 @@ const FloatingWhatsApp = () => {
         onClick={handleWhatsAppContact}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl transition-all duration-300 transform hover:scale-110 group relative overflow-hidden p-2"
+        className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl transition-all duration-300 transform hover:scale-110 group relative overflow-hidden p-1"
       >
         <svg 
-          className="w-16 h-16 transition-transform duration-300 group-hover:scale-110" 
+          className="w-12 h-12 transition-transform duration-300 group-hover:scale-110" 
           fill="currentColor" 
           viewBox="0 0 24 24"
         >

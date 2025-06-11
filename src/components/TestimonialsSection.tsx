@@ -1,68 +1,86 @@
 
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      id: 1,
-      text: "O Bruno transformou completamente a nossa lua de mel, criando momentos mágicos enquanto cuidava de todos os detalhes. A atenção personalizada foi extraordinária.",
-      author: "Sofia Almeida",
-      role: "Cliente, Viagem a Paris",
-      gradient: "from-blue-600 to-purple-600"
+      name: "Maria Silva",
+      location: "Lisboa",
+      text: "O Bruno organizou a nossa lua de mel em Santorini e foi simplesmente perfeito! Cada detalhe foi pensado ao pormenor. Recomendo vivamente!",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b550?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
-      id: 2,
-      text: "Implementar os serviços do Bruno nas nossas férias familiares reduziu o stress em 40% enquanto melhorava a qualidade da experiência. As capacidades de adaptação são notáveis.",
-      author: "Miguel Rodrigues",
-      role: "Diretor de Turismo, Família Silva",
-      gradient: "from-orange-500 to-red-500"
+      name: "João Costa",
+      location: "Porto",
+      text: "Viagem incrível para a Tailândia! O Bruno conseguiu criar um itinerário que superou todas as nossas expectativas. Serviço de primeira qualidade.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
-      id: 3,
-      text: "O Bruno adaptou-se aos nossos protocolos de viagem mais rapidamente que qualquer agente que já usámos. É como ter outro consultor que nunca se cansa e mantém precisão perfeita.",
-      author: "Dr. Ana Patinho",
-      role: "Especialista Sénior, Viagens Corporativas",
-      gradient: "from-orange-500 to-yellow-500"
+      name: "Ana Rodrigues",
+      location: "Coimbra",
+      text: "Experiência única em Marrocos! O Bruno tem contactos locais fantásticos que nos proporcionaram experiências autênticas que nunca esqueceremos.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
-      id: 4,
-      text: "Como empresa de médio porte, nunca pensámos que serviços de viagem avançados fossem acessíveis. O Bruno mudou completamente essa equação com versatilidade e facilidade de implementação.",
-      author: "João Santos",
-      role: "CEO, Soluções Inovadoras Lda.",
-      gradient: "from-blue-500 to-indigo-600"
+      name: "Pedro Santos",
+      location: "Faro",
+      text: "Viagem de sonho ao Japão! O Bruno cuidou de tudo, desde os voos até às experiências mais especiais. Profissionalismo exemplar!",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80"
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-full text-orange-600 text-sm font-medium mb-6">
-            Testemunhos
-          </div>
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+      <div className="absolute inset-0 noise-overlay"></div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">O que</span>
+            <span className="text-gray-900">Experiências</span>
             <br />
-            <span className="gradient-text">outros dizem</span>
+            <span className="gradient-text">Inesquecíveis</span>
           </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Veja o que dizem os nossos clientes sobre as suas viagens com o Bruno Lopes. 
+            Cada testemunho é uma história de aventura e descoberta.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              className={`relative p-8 rounded-3xl text-white overflow-hidden group animate-scale-in bg-gradient-to-br ${testimonial.gradient} noise-overlay`}
+            <Card 
+              key={index}
+              className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 shadow-lg bg-white/80 backdrop-blur-lg animate-scale-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="relative z-10">
-                <blockquote className="text-lg mb-6 leading-relaxed">
-                  "{testimonial.text}"
-                </blockquote>
-                
-                <div>
-                  <div className="text-white font-semibold text-lg">{testimonial.author}</div>
-                  <div className="text-white/80 text-sm">{testimonial.role}</div>
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-            </div>
+                <h3 className="title-font text-lg text-gray-900">{testimonial.name}</h3>
+                <p className="text-sm text-gray-500">{testimonial.location}</p>
+                <div className="flex justify-center space-x-1 mt-2">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                  ))}
+                </div>
+              </CardHeader>
+              
+              <CardContent>
+                <p className="text-gray-600 text-center italic leading-relaxed">
+                  "{testimonial.text}"
+                </p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

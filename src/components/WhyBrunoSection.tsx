@@ -1,80 +1,84 @@
 
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
 const WhyBrunoSection = () => {
-  const features = [
+  const reasons = [
     {
-      id: 1,
-      title: "Aprendizagem Adaptativa",
-      description: "Bruno aprende com as suas interações, melhorando continuamente as suas respostas e ações para servir melhor as suas necessidades.",
-      icon: "🧠",
+      title: "Experiência Personalizada",
+      description: "Cada viagem é única e adaptada aos seus gostos e preferências pessoais.",
+      icon: "🎯",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      title: "Destinos Exclusivos",
+      description: "Acesso a locais únicos e experiências que não encontrará em mais lado nenhum.",
+      icon: "🌍",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Suporte 24/7",
+      description: "Apoio completo durante toda a sua viagem, para total tranquilidade.",
+      icon: "🤝",
+      gradient: "from-green-500 to-teal-500"
+    },
+    {
+      title: "Preços Competitivos",
+      description: "Melhor relação qualidade-preço com transparência total nos custos.",
+      icon: "💎",
       gradient: "from-orange-500 to-red-500"
     },
     {
-      id: 2,
-      title: "Interação Natural",
-      description: "Comunique usando linguagem natural e gestos. Bruno compreende o contexto e responde adequadamente.",
-      icon: "💬",
-      gradient: "from-blue-500 to-purple-600"
+      title: "Parcerias Locais",
+      description: "Rede de contactos locais para experiências autênticas e memoráveis.",
+      icon: "🏛️",
+      gradient: "from-indigo-500 to-purple-500"
     },
     {
-      id: 3,
-      title: "Movimento Preciso",
-      description: "Articulações motorizadas avançadas proporcionam movimento fluido, semelhante ao humano, com equilíbrio e coordenação excepcionais.",
-      icon: "⚡",
-      gradient: "from-green-500 to-teal-600"
-    },
-    {
-      id: 4,
-      title: "Consciência Espacial",
-      description: "Sensores avançados e tecnologia de mapeamento permitem ao Bruno navegar em ambientes complexos com facilidade.",
-      icon: "🗺️",
-      gradient: "from-purple-500 to-pink-600"
-    },
-    {
-      id: 5,
-      title: "Segurança Aprimorada",
-      description: "Protocolos integrados protegem os seus dados e privacidade, enquanto salvaguardas físicas garantem operação segura.",
-      icon: "🔒",
-      gradient: "from-red-500 to-orange-600"
-    },
-    {
-      id: 6,
-      title: "Assistência de Tarefas",
-      description: "De lembretes simples a tarefas complexas de múltiplas etapas, Bruno pode ajudar com uma ampla gama de atividades.",
+      title: "Planeamento Detalhado",
+      description: "Cada aspecto da sua viagem é cuidadosamente planeado e organizado.",
       icon: "📋",
-      gradient: "from-teal-500 to-blue-600"
+      gradient: "from-teal-500 to-blue-500"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-full text-orange-600 text-sm font-medium mb-6">
-            Características
-          </div>
+    <section className="py-20 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 noise-overlay"></div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Inteligência Avançada,</span>
+            <span className="text-gray-900">Porquê Escolher</span>
             <br />
-            <span className="gradient-text">Intuição Humana</span>
+            <span className="gradient-text">Bruno Lopes</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Construído com tecnologia de ponta para compreender, aprender e adaptar-se às suas necessidades únicas.
+            Mais de 10 anos de experiência criando viagens extraordinárias. 
+            Descubra porque centenas de clientes confiam no Bruno para as suas aventuras.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={feature.id}
-              className={`relative p-8 rounded-3xl text-white overflow-hidden group animate-scale-in bg-gradient-to-br ${feature.gradient} noise-overlay hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2`}
-              style={{ animationDelay: `${index * 100}ms` }}
+          {reasons.map((reason, index) => (
+            <Card 
+              key={index}
+              className="relative overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 shadow-lg animate-scale-in"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="relative z-10">
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-2xl title-font mb-4">{feature.title}</h3>
-                <p className="text-white/90 leading-relaxed">{feature.description}</p>
-              </div>
-            </div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${reason.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+              
+              <CardHeader className="relative z-10">
+                <div className="text-4xl mb-4">{reason.icon}</div>
+                <CardTitle className="text-xl title-font text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                  {reason.title}
+                </CardTitle>
+              </CardHeader>
+              
+              <CardContent className="relative z-10">
+                <CardDescription className="text-gray-600 leading-relaxed">
+                  {reason.description}
+                </CardDescription>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

@@ -21,12 +21,13 @@ const TravelPackages = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Escolha a Sua</span>
+            <span className="text-gray-900">Pacotes de Viagem</span>
             <br />
-            <span className="gradient-text">Escapada Perfeita</span>
+            <span className="gradient-text">Exclusivos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Destinos selecionados a dedo e experiências cuidadosamente elaboradas que criam memórias para toda a vida.
+            Descubra destinos únicos com pacotes personalizados pelo Bruno Lopes. 
+            Cada viagem é cuidadosamente planeada para criar experiências autênticas e memoráveis.
           </p>
         </div>
 
@@ -59,13 +60,13 @@ const TravelPackages = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      <Badge className="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 text-sm font-semibold">
+                      <Badge className="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 text-sm font-semibold">
                         {pkg.duration}
                       </Badge>
                     </div>
                     
                     <CardHeader>
-                      <CardTitle className="text-xl title-font text-gray-900 group-hover:text-orange-600 transition-colors duration-300">
+                      <CardTitle className="text-xl title-font text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                         {pkg.name}
                       </CardTitle>
                       <CardDescription className="text-gray-600">
@@ -74,7 +75,7 @@ const TravelPackages = () => {
                     </CardHeader>
                     
                     <CardContent className="space-y-4">
-                      <div className="text-2xl title-font text-orange-600">
+                      <div className="text-2xl title-font text-blue-600">
                         {pkg.price}
                       </div>
                       
@@ -83,7 +84,7 @@ const TravelPackages = () => {
                         <ul className="space-y-1">
                           {pkg.includes.slice(0, 3).map((item, i) => (
                             <li key={i} className="text-sm text-gray-600 flex items-center">
-                              <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                              <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                               {item}
                             </li>
                           ))}
@@ -112,7 +113,7 @@ const TravelPackages = () => {
                         onClick={() => handleWhatsAppContact(pkg.name)}
                         className="w-full bg-gradient-orange-purple hover:shadow-lg text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
                       >
-                        Reservar via WhatsApp
+                        Contactar via WhatsApp
                       </Button>
                     </CardFooter>
                   </Card>
