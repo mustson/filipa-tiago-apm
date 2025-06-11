@@ -81,17 +81,12 @@ const TravelPackages = () => {
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Inclui:</h4>
                         <ul className="space-y-1">
-                          {pkg.includes.slice(0, 3).map((item, i) => (
+                          {pkg.includes.map((item, i) => (
                             <li key={i} className="text-sm text-gray-600 flex items-center">
                               <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                               {item}
                             </li>
                           ))}
-                          {pkg.includes.length > 3 && (
-                            <li className="text-sm text-gray-500 italic">
-                              +{pkg.includes.length - 3} mais incluído
-                            </li>
-                          )}
                         </ul>
                       </div>
                       

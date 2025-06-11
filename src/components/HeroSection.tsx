@@ -11,8 +11,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="h-screen bg-white px-4 pt-16 pb-8 flex items-center justify-center">
-        <div className="relative w-full max-w-[95%] h-[90vh] md:h-[85vh] rounded-[2.5rem] overflow-hidden">
+      <section id="home" className="h-screen bg-white px-0 sm:px-4 pt-16 pb-8 flex items-center justify-center">
+        <div className="relative w-full h-[90vh] md:h-[85vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
             <img 
@@ -34,9 +34,9 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-900/30 to-transparent h-1/2"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent h-1/2 top-1/2"></div>
           
-          <div className="relative w-full max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center">
-            {/* Main content - Centered */}
-            <div className="text-center space-y-8 max-w-4xl">
+          <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
+            {/* Main content - Top aligned on mobile, centered on desktop */}
+            <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
               <h1 className="font-light text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
                 Planeie a sua próxima
                 <br />
@@ -49,14 +49,17 @@ const HeroSection = () => {
               
               <div className="flex gap-6 items-center justify-center">
                 <Button 
-                  onClick={scrollToPackages}
-                  size="lg"
-                  className="bg-orange-400 hover:bg-orange-500 text-white px-10 py-6 text-lg font-light rounded-xl transition-all duration-300"
+                  onClick={scrollToPackages} 
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 shadow-none"
                 >
                   Explorar Destinos
                 </Button>
-                <a href="#about" className="text-white/90 hover:text-white font-light transition-colors duration-300">
-                  Saber Mais →
+                <a 
+                  href="#about" 
+                  className="text-white/90 hover:text-white flex items-center gap-2 transition-colors duration-300 hidden sm:flex"
+                >
+                  <span>Saber Mais</span>
+                  <span className="text-xl">→</span>
                 </a>
               </div>
             </div>

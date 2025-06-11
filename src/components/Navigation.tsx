@@ -19,9 +19,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <h1 className="text-gray-900">
-              <span className="font-bold text-2xl tracking-wider uppercase">BRUNO LOPES</span>
-              <span className="font-extralight text-xl tracking-widest uppercase ml-2">TRAVEL AGENT</span>
+            <h1 className="text-gray-900 flex items-baseline">
+              <span className="font-bold text-xl sm:text-2xl tracking-tight sm:tracking-wider uppercase">BRUNO LOPES</span>
+              <span className="font-extralight text-sm sm:text-xl tracking-tight sm:tracking-widest uppercase ml-1 sm:ml-2">TRAVEL AGENT</span>
             </h1>
           </div>
           
