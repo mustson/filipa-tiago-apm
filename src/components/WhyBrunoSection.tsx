@@ -43,7 +43,7 @@ const WhyBrunoSection = () => {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="absolute inset-0 noise-overlay"></div>
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6 hidden sm:block">
             <span className="text-gray-900">Bruno trabalha com</span>

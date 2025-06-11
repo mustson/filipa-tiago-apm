@@ -20,9 +20,9 @@ const TravelPackages = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Pacotes de Destinos Únicos</span>
+            <span className="text-gray-900">Pacotes de Destinos Únicos e</span>
             <br />
-            <span className="gradient-text">100% Personalizáveis</span>
+            <span className="gradient-text">Personalizáveis</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cada viagem é uma experiência única, desenhada especialmente para si.

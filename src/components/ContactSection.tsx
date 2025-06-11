@@ -37,7 +37,7 @@ Mensagem: ${formData.message}`;
 
   return (
     <section id="contact" className="py-20 bg-blue-50">
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
             <span className="text-gray-900">Planear a Sua</span>

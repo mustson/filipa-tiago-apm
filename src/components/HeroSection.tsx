@@ -2,6 +2,18 @@ import { Button } from '@/components/ui/button';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../styles/hero.css';
 
+const ChalkUnderline = () => (
+  <svg
+    className="absolute left-0 bottom-0 w-[110%] h-auto text-orange-500 -mb-1 md:-mb-2 lg:-mb-3 -translate-x-[5%]"
+    viewBox="0 0 300 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+  >
+    <path d="M2.5 11.8161C33.6667 10.3161 161 -2.48395 297.5 5.81605C297.5 5.81605 210.5 12.8161 123 16.3161C123 16.3161 79.1667 17.8161 2.5 11.8161Z" fill="currentColor"/>
+  </svg>
+);
+
 const HeroSection = () => {
   const scrollToPackages = () => {
     const packagesSection = document.getElementById('packages');
@@ -36,13 +48,16 @@ const HeroSection = () => {
           
 
           
-          <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
+          <div className="relative z-20 w-full max-w-7xl mx-auto px-3 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
             <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
-              <h1 className="font-light text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
-                Planeie a sua próxima
+                <h1 className="font-light text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
+                <span className="font-bold">Viva</span> a sua próxima
                 <br />
-                aventura com o Bruno!
+                <span className="relative inline-block px-4">
+                  <span className="font-bold">aventura</span>
+                  <ChalkUnderline />
+                </span> com o Bruno!
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light">
