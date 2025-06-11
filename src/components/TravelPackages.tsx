@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -111,7 +110,7 @@ const TravelPackages = () => {
                     <CardFooter>
                       <Button
                         onClick={() => handleWhatsAppContact(pkg.name)}
-                        className="w-full bg-gradient-orange-purple hover:shadow-lg text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md"
                       >
                         Contactar via WhatsApp
                       </Button>

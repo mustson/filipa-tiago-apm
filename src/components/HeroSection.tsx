@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -13,10 +12,14 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen hero-beach-bg noise-overlay flex items-center justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-20 text-center">
         <div className="animate-fade-in">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full text-blue-100 text-sm font-medium mb-6">
-              ✈️ Experiências de Viagem Únicas
-            </span>
+          <div className="mb-10 flex flex-col items-center">
+            <img 
+              src="/LOGO.png" 
+              alt="Bruno Lopes Logo" 
+              width={300} 
+              height={300} 
+              className="mb-6"
+            />
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl title-font mb-8 leading-tight">
@@ -36,9 +39,9 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToPackages}
               size="lg"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 text-xl font-bold rounded-full transition-all duration-300 shadow-lg"
             >
-              Ver Viagens
+              DESCOBRIR VIAGENS
             </Button>
           </div>
         </div>

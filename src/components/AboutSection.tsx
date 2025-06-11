@@ -1,18 +1,21 @@
-
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="animate-fade-in">
             <h2 className="text-5xl md:text-6xl title-font mb-8">
-              <span className="text-gray-900">Bruno trabalha com os seus</span>
+              <span className="text-gray-900">Bruno trabalha com</span>
               <br />
-              <span className="gradient-text">sonhos, não</span>
+              <span className="text-gray-900">os seus</span>
+              <br />
+              <span className="text-blue-500">sonhos, não</span>
               <br />
               <span className="text-gray-900">em vez deles.</span>
             </h2>
-            
+          </div>
+          
+          <div className="animate-fade-in">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Ao gerir <span className="text-orange-500 font-semibold">logística complexa</span>, 
               melhorar a <span className="text-purple-600 font-semibold">segurança da viagem</span>, 
@@ -21,7 +24,7 @@ const AboutSection = () => {
               <span className="text-purple-600 font-semibold"> explorar, descobrir e criar memórias.</span>
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -58,19 +61,17 @@ const AboutSection = () => {
                 <span className="text-lg text-gray-700">Opções de reserva flexíveis</span>
               </div>
             </div>
-          </div>
-          
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="gradient-orange-purple noise-overlay rounded-3xl p-8 text-white">
-                <h3 className="text-2xl title-font mb-4">Os Detalhes</h3>
-                <p className="text-white/90">Planeamento de viagem de precisão encontra inteligência adaptativa</p>
-              </div>
-              
-              <div className="gradient-blue-purple noise-overlay rounded-3xl p-8 text-white">
-                <h3 className="text-2xl title-font mb-4">Veja por si mesmo</h3>
-                <p className="text-white/90">Experimente a diferença em primeira mão</p>
-              </div>
+            
+            <div className="flex">
+              <a 
+                href="#packages" 
+                className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300"
+              >
+                Ver Pacotes de Viagem
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

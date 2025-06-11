@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 const Navigation = () => {
@@ -19,12 +18,12 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-purple-600"></div>
-            <h1 className={`text-2xl title-font transition-colors duration-300 ${
+          <div className="flex items-center">
+            <h1 className={`transition-colors duration-300 ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              Bruno Lopes
+              <span className="font-bold text-2xl tracking-tight uppercase">BRUNO LOPES</span>
+              <span className="font-light text-xl tracking-wider uppercase ml-2">TRAVEL AGENT</span>
             </h1>
           </div>
           
