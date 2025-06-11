@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
@@ -89,6 +90,42 @@ Mensagem: ${formData.message}`;
                   <p className="text-gray-600 font-medium">Seg - Sex: 9:00 - 18:00</p>
                 </div>
               </div>
+
+              <a href="https://www.instagram.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center space-x-4 p-4 bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                      <Instagram className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                      <h3 className="font-semibold text-gray-900 text-lg">Instagram</h3>
+                      <p className="text-gray-600 font-medium">@brunolopestravel</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://www.facebook.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center space-x-4 p-4 bg-blue-100 rounded-lg">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                      <Facebook className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                      <h3 className="font-semibold text-gray-900 text-lg">Facebook</h3>
+                      <p className="text-gray-600 font-medium">/brunolopestravel</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/bruno-lopes-a55a35b/" target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center space-x-4 p-4 bg-sky-100 rounded-lg">
+                  <div className="w-12 h-12 bg-sky-600 rounded-full flex items-center justify-center">
+                      <Linkedin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                      <h3 className="font-semibold text-gray-900 text-lg">LinkedIn</h3>
+                      <p className="text-gray-600 font-medium">Bruno Lopes</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
