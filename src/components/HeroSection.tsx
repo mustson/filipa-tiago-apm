@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl title-font mb-8 leading-tight">
             <span className="text-white">Viaje com</span>
             <br />
-            <span className="gradient-text">Bruno Lopes</span>
+            <span className="text-white">Bruno Lopes</span>
             <br />
             <span className="text-white">Explore o Mundo</span>
           </h1>
