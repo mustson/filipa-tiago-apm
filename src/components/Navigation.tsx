@@ -21,7 +21,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <h1 className="text-gray-900">
               <span className="font-bold text-2xl tracking-wider uppercase">BRUNO LOPES</span>
-              <span className="font-extralight text-xl tracking-widest uppercase ml-2">EXPERIENCE DESIGNER</span>
+              <span className="font-extralight text-xl tracking-widest uppercase ml-2">TRAVEL AGENT</span>
             </h1>
           </div>
           

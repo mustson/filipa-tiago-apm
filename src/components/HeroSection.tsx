@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import '../styles/hero.css';
 
 const HeroSection = () => {
   const scrollToPackages = () => {
@@ -12,9 +13,26 @@ const HeroSection = () => {
     <>
       <section id="home" className="h-screen bg-white px-4 pt-16 pb-8 flex items-center justify-center">
         <div className="relative w-full max-w-[95%] h-[90vh] md:h-[85vh] rounded-[2.5rem] overflow-hidden">
-          {/* Background image with gradient overlay */}
-          <div className="absolute inset-0 hero-beach-bg"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/80 to-transparent"></div>
+          {/* Full width background image */}
+          <div className="absolute inset-0 w-full h-full">
+            <img 
+              src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=90"
+              alt="Paisagem de viagem"
+              className="w-full h-full object-cover object-center"
+              style={{
+                minWidth: '100%',
+                minHeight: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
+                transform: 'translateZ(0)',
+                willChange: 'transform'
+              }}
+            />
+          </div>
+          
+          {/* Enhanced gradient overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-900/30 to-transparent h-1/2"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent h-1/2 top-1/2"></div>
           
           <div className="relative w-full max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center">
             {/* Main content - Centered */}
@@ -26,8 +44,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light">
-                Bruno Lopes é o seu personal experience traveler designer.
-                Cada destino é cuidadosamente selecionado para criar experiências extraordinárias.
+                Bruno Lopes é o seu personal experience traveler designer. Destinos cuidadosamente selecionados para viver experiências extraordinárias.
               </p>
               
               <div className="flex gap-6 items-center justify-center">
