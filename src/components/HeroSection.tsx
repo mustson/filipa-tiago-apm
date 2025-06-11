@@ -11,8 +11,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="h-screen bg-white px-0 sm:px-4 pt-16 pb-8 flex items-center justify-center">
-        <div className="relative w-full h-[90vh] md:h-[85vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
+      <section id="home" className="min-h-screen h-auto sm:h-screen bg-white px-0 sm:px-4 pt-16 pb-16 sm:pb-8 flex items-center justify-center">
+        <div className="relative w-full h-auto min-h-[120vh] sm:h-[85vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
             <img 
@@ -66,9 +66,9 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Floating cards - Only visible on desktop */}
-            <div className="hidden md:block w-full mt-16 lg:mt-24">
-              <div className="grid grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+            {/* Floating cards - Visible on all devices */}
+            <div className="w-full mt-8 sm:mt-16 lg:mt-24">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transform hover:scale-105 transition-transform duration-300">
                   <h3 className="text-xl font-light text-white mb-2">Destinos Exclusivos</h3>
                   <p className="text-white/80 font-light">Explore lugares únicos e experiências inesquecíveis em todo o mundo.</p>
@@ -85,26 +85,6 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mobile cards section - Outside hero, single column */}
-      <section className="md:hidden bg-white px-4 py-12">
-        <div className="max-w-lg mx-auto space-y-6">
-          <div className="bg-blue-700/90 rounded-2xl p-6">
-            <h3 className="text-xl font-light text-white mb-2">Destinos Exclusivos</h3>
-            <p className="text-white/80 font-light">Explore lugares únicos e experiências inesquecíveis em todo o mundo.</p>
-          </div>
-          
-          <div className="bg-blue-700/90 rounded-2xl p-6">
-            <h3 className="text-xl font-light text-white mb-2">Viagens Personalizadas</h3>
-            <p className="text-white/80 font-light">Cada roteiro é criado especialmente para si e as suas preferências.</p>
-          </div>
-          
-          <div className="bg-blue-700/90 rounded-2xl p-6">
-            <h3 className="text-xl font-light text-white mb-2">Momentos Mágicos</h3>
-            <p className="text-white/80 font-light">Experiências cuidadosamente selecionadas para momentos inesquecíveis.</p>
           </div>
         </div>
       </section>
