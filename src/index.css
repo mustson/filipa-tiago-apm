@@ -132,4 +132,9 @@
     background-position: center;
     background-attachment: fixed;
   }
+
+  .title-font {
+    font-family: Brockmann, "SF Pro Display", Inter, sans-serif;
+    font-weight: normal;
+  }
 }

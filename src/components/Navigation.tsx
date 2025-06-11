@@ -21,7 +21,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-purple-600"></div>
-            <h1 className={`text-2xl font-bold transition-colors duration-300 ${
+            <h1 className={`text-2xl title-font transition-colors duration-300 ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
               Bruno Lopes
@@ -32,22 +32,22 @@ const Navigation = () => {
             <a href="#home" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
               isScrolled ? 'text-gray-700' : 'text-white'
             }`}>
-              Home
+              Início
             </a>
             <a href="#packages" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
               isScrolled ? 'text-gray-700' : 'text-white'
             }`}>
-              Packages
+              Viagens
             </a>
             <a href="#about" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
               isScrolled ? 'text-gray-700' : 'text-white'
             }`}>
-              About
+              Sobre
             </a>
             <a href="#contact" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
               isScrolled ? 'text-gray-700' : 'text-white'
             }`}>
-              Contact
+              Contacto
             </a>
           </div>
         </div>

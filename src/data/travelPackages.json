@@ -2,49 +2,133 @@
 {
   "categories": [
     {
-      "id": "europe",
-      "name": "Europe",
+      "id": "europa",
+      "name": "Europa",
       "packages": [
         {
           "id": "paris-romance",
-          "name": "Paris Romance Getaway",
+          "name": "Escapada Romântica em Paris",
           "image": "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-          "price": "€1,299",
-          "duration": "5 days / 4 nights",
-          "description": "Experience the magic of Paris with your loved one",
+          "price": "€1.299",
+          "duration": "5 dias / 4 noites",
+          "description": "Experimente a magia de Paris com seu amor",
           "includes": [
-            "4 nights at luxury hotel",
-            "Daily breakfast",
-            "Seine River cruise",
-            "Eiffel Tower dinner",
-            "Airport transfers"
+            "4 noites em hotel de luxo",
+            "Café da manhã diário",
+            "Cruzeiro no Rio Sena",
+            "Jantar na Torre Eiffel",
+            "Transfers do aeroporto"
           ],
           "availableDates": [
-            "March 15-19, 2025",
-            "April 12-16, 2025",
-            "May 10-14, 2025",
-            "June 7-11, 2025"
+            "15-19 Março, 2025",
+            "12-16 Abril, 2025",
+            "10-14 Maio, 2025",
+            "7-11 Junho, 2025"
           ]
         },
         {
-          "id": "italian-coast",
-          "name": "Italian Coast Adventure",
+          "id": "costa-italiana",
+          "name": "Aventura na Costa Italiana",
           "image": "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
-          "price": "€1,899",
-          "duration": "8 days / 7 nights",
-          "description": "Discover the breathtaking Amalfi Coast and Cinque Terre",
+          "price": "€1.899",
+          "duration": "8 dias / 7 noites",
+          "description": "Descubra a deslumbrante Costa Amalfitana e Cinque Terre",
           "includes": [
-            "7 nights accommodation",
-            "Daily breakfast",
-            "Boat tours",
-            "Wine tasting experiences",
-            "Local guide services"
+            "7 noites de acomodação",
+            "Café da manhã diário",
+            "Passeios de barco",
+            "Experiências de degustação de vinhos",
+            "Serviços de guia local"
           ],
           "availableDates": [
-            "April 20-27, 2025",
-            "May 18-25, 2025",
-            "September 14-21, 2025",
-            "October 12-19, 2025"
+            "20-27 Abril, 2025",
+            "18-25 Maio, 2025",
+            "14-21 Setembro, 2025",
+            "12-19 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "grecia-ilhas",
+          "name": "Ilhas Gregas Clássicas",
+          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+          "price": "€2.199",
+          "duration": "10 dias / 9 noites",
+          "description": "Explore Santorini, Mykonos e Atenas",
+          "includes": [
+            "9 noites em hotéis boutique",
+            "Todas as refeições",
+            "Transfers entre ilhas",
+            "Tours arqueológicos",
+            "Pôr do sol em Oia"
+          ],
+          "availableDates": [
+            "5-14 Maio, 2025",
+            "15-24 Junho, 2025",
+            "1-10 Setembro, 2025",
+            "20-29 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "espanha-cultural",
+          "name": "Espanha Cultural",
+          "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=800&q=80",
+          "price": "€1.699",
+          "duration": "7 dias / 6 noites",
+          "description": "Madrid, Barcelona e a rica cultura espanhola",
+          "includes": [
+            "6 noites em hotéis centrais",
+            "Café da manhã",
+            "Visitas ao Prado e Sagrada Família",
+            "Espetáculo de flamenco",
+            "Degustação de tapas"
+          ],
+          "availableDates": [
+            "3-9 Abril, 2025",
+            "8-14 Maio, 2025",
+            "12-18 Setembro, 2025",
+            "15-21 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "portugal-norte",
+          "name": "Norte de Portugal",
+          "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=800&q=80",
+          "price": "€1.399",
+          "duration": "6 dias / 5 noites",
+          "description": "Porto, Douro e as tradições portuguesas",
+          "includes": [
+            "5 noites em quintas e hotéis",
+            "Todas as refeições",
+            "Cruzeiro no Douro",
+            "Degustação de vinhos do Porto",
+            "Visita a Guimarães e Braga"
+          ],
+          "availableDates": [
+            "15-20 Abril, 2025",
+            "20-25 Maio, 2025",
+            "10-15 Setembro, 2025",
+            "5-10 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "suica-alpes",
+          "name": "Alpes Suíços",
+          "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
+          "price": "€2.899",
+          "duration": "8 dias / 7 noites",
+          "description": "Paisagens alpinas deslumbrantes e luxo suíço",
+          "includes": [
+            "7 noites em resorts alpinos",
+            "Pensão completa",
+            "Passeios de trem panorâmico",
+            "Atividades de montanha",
+            "Spa e wellness"
+          ],
+          "availableDates": [
+            "1-8 Junho, 2025",
+            "15-22 Julho, 2025",
+            "5-12 Dezembro, 2025",
+            "20-27 Janeiro, 2026"
           ]
         }
       ]
@@ -54,93 +138,261 @@
       "name": "Tropical",
       "packages": [
         {
-          "id": "maldives-luxury",
-          "name": "Maldives Luxury Resort",
+          "id": "maldivas-luxo",
+          "name": "Resort de Luxo nas Maldivas",
           "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-          "price": "€3,499",
-          "duration": "7 days / 6 nights",
-          "description": "Ultimate luxury in overwater villas with crystal clear waters",
+          "price": "€3.499",
+          "duration": "7 dias / 6 noites",
+          "description": "Luxo absoluto em vilas sobre a água com águas cristalinas",
           "includes": [
-            "6 nights overwater villa",
-            "All meals included",
-            "Spa treatments",
-            "Water sports activities",
-            "Seaplane transfers"
+            "6 noites em vila sobre a água",
+            "Todas as refeições incluídas",
+            "Tratamentos de spa",
+            "Atividades aquáticas",
+            "Transfers de hidroavião"
           ],
           "availableDates": [
-            "February 10-16, 2025",
-            "March 24-30, 2025",
-            "November 15-21, 2025",
-            "December 20-26, 2025"
+            "10-16 Fevereiro, 2025",
+            "24-30 Março, 2025",
+            "15-21 Novembro, 2025",
+            "20-26 Dezembro, 2025"
           ]
         },
         {
           "id": "bali-cultural",
-          "name": "Bali Cultural Discovery",
-          "image": "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-          "price": "€1,699",
-          "duration": "10 days / 9 nights",
-          "description": "Immerse yourself in Balinese culture and natural beauty",
+          "name": "Descoberta Cultural de Bali",
+          "image": "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80",
+          "price": "€1.699",
+          "duration": "10 dias / 9 noites",
+          "description": "Mergulhe na cultura balinesa e beleza natural",
           "includes": [
-            "9 nights boutique hotels",
-            "Daily breakfast",
-            "Temple tours",
-            "Cooking classes",
-            "Yoga sessions"
+            "9 noites em hotéis boutique",
+            "Café da manhã diário",
+            "Tours pelos templos",
+            "Aulas de culinária",
+            "Sessões de yoga"
           ],
           "availableDates": [
-            "January 15-24, 2025",
-            "March 10-19, 2025",
-            "July 22-31, 2025",
-            "October 5-14, 2025"
+            "15-24 Janeiro, 2025",
+            "10-19 Março, 2025",
+            "22-31 Julho, 2025",
+            "5-14 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "seychelles-paraiso",
+          "name": "Paraíso das Seychelles",
+          "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=800&q=80",
+          "price": "€2.999",
+          "duration": "8 dias / 7 noites",
+          "description": "Praias pristinas e natureza exuberante",
+          "includes": [
+            "7 noites em resort 5 estrelas",
+            "Pensão completa",
+            "Excursões às ilhas",
+            "Snorkeling e mergulho",
+            "Spa treatments"
+          ],
+          "availableDates": [
+            "5-12 Março, 2025",
+            "10-17 Maio, 2025",
+            "15-22 Outubro, 2025",
+            "5-12 Dezembro, 2025"
+          ]
+        },
+        {
+          "id": "caribe-barbados",
+          "name": "Barbados Caribenho",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "price": "€2.299",
+          "duration": "7 dias / 6 noites",
+          "description": "Cultura vibrante e praias de areia branca",
+          "includes": [
+            "6 noites em resort all-inclusive",
+            "Todas as refeições e bebidas",
+            "Atividades aquáticas",
+            "Tours culturais",
+            "Entretenimento noturno"
+          ],
+          "availableDates": [
+            "12-18 Fevereiro, 2025",
+            "15-21 Abril, 2025",
+            "20-26 Novembro, 2025",
+            "15-21 Dezembro, 2025"
+          ]
+        },
+        {
+          "id": "tailandia-exotica",
+          "name": "Tailândia Exótica",
+          "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
+          "price": "€1.899",
+          "duration": "12 dias / 11 noites",
+          "description": "Bangkok, Chiang Mai e ilhas paradisíacas",
+          "includes": [
+            "11 noites em hotéis selecionados",
+            "Café da manhã diário",
+            "Voos domésticos",
+            "Tours culturais",
+            "Massagens tradicionais"
+          ],
+          "availableDates": [
+            "20-31 Janeiro, 2025",
+            "15-26 Março, 2025",
+            "10-21 Novembro, 2025",
+            "5-16 Dezembro, 2025"
+          ]
+        },
+        {
+          "id": "fiji-romance",
+          "name": "Romance em Fiji",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "price": "€3.199",
+          "duration": "9 dias / 8 noites",
+          "description": "O destino romântico perfeito no Pacífico Sul",
+          "includes": [
+            "8 noites em bures sobre a água",
+            "Pensão completa",
+            "Cerimônia de bênção Fijiana",
+            "Excursões às ilhas",
+            "Spa couples treatments"
+          ],
+          "availableDates": [
+            "14-22 Fevereiro, 2025",
+            "18-26 Maio, 2025",
+            "12-20 Setembro, 2025",
+            "10-18 Dezembro, 2025"
           ]
         }
       ]
     },
     {
-      "id": "adventure",
-      "name": "Adventure",
+      "id": "aventura",
+      "name": "Aventura",
       "packages": [
         {
-          "id": "iceland-northern-lights",
-          "name": "Iceland Northern Lights",
+          "id": "islandia-aurora",
+          "name": "Aurora Boreal na Islândia",
           "image": "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
-          "price": "€2,199",
-          "duration": "6 days / 5 nights",
-          "description": "Chase the Aurora Borealis in Iceland's dramatic landscapes",
+          "price": "€2.199",
+          "duration": "6 dias / 5 noites",
+          "description": "Persiga a Aurora Boreal nas paisagens dramáticas da Islândia",
           "includes": [
-            "5 nights accommodation",
-            "Daily breakfast",
-            "Northern Lights tours",
-            "Blue Lagoon entry",
-            "Golden Circle tour"
+            "5 noites de acomodação",
+            "Café da manhã diário",
+            "Tours da Aurora Boreal",
+            "Entrada na Blue Lagoon",
+            "Tour do Círculo Dourado"
           ],
           "availableDates": [
-            "January 20-25, 2025",
-            "February 17-22, 2025",
-            "November 10-15, 2025",
-            "December 15-20, 2025"
+            "20-25 Janeiro, 2025",
+            "17-22 Fevereiro, 2025",
+            "10-15 Novembro, 2025",
+            "15-20 Dezembro, 2025"
           ]
         },
         {
-          "id": "patagonia-trek",
-          "name": "Patagonia Trekking",
+          "id": "patagonia-trekking",
+          "name": "Trekking na Patagónia",
           "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-          "price": "€2,899",
-          "duration": "12 days / 11 nights",
-          "description": "Epic trekking adventure through Torres del Paine",
+          "price": "€2.899",
+          "duration": "12 dias / 11 noites",
+          "description": "Aventura épica de trekking através de Torres del Paine",
           "includes": [
-            "11 nights accommodation",
-            "All meals",
-            "Professional guides",
-            "Trekking equipment",
-            "Transportation"
+            "11 noites de acomodação",
+            "Todas as refeições",
+            "Guias profissionais",
+            "Equipamento de trekking",
+            "Transporte"
           ],
           "availableDates": [
-            "February 5-16, 2025",
-            "March 12-23, 2025",
-            "December 1-12, 2025",
-            "January 14-25, 2026"
+            "5-16 Fevereiro, 2025",
+            "12-23 Março, 2025",
+            "1-12 Dezembro, 2025",
+            "14-25 Janeiro, 2026"
+          ]
+        },
+        {
+          "id": "nepal-everest",
+          "name": "Campo Base do Everest",
+          "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+          "price": "€3.499",
+          "duration": "16 dias / 15 noites",
+          "description": "Trekking lendário até ao Campo Base do Everest",
+          "includes": [
+            "15 noites em lodges de montanha",
+            "Todas as refeições",
+            "Guias certificados",
+            "Permissões e taxas",
+            "Voos domésticos"
+          ],
+          "availableDates": [
+            "15-30 Março, 2025",
+            "1-16 Maio, 2025",
+            "15-30 Outubro, 2025",
+            "1-16 Novembro, 2025"
+          ]
+        },
+        {
+          "id": "peru-machu-picchu",
+          "name": "Trilha do Inca para Machu Picchu",
+          "image": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=800&q=80",
+          "price": "€2.399",
+          "duration": "8 dias / 7 noites",
+          "description": "Siga os passos dos Incas até à cidade perdida",
+          "includes": [
+            "7 noites de acomodação variada",
+            "Todas as refeições durante trek",
+            "Guias especializados",
+            "Permissões Machu Picchu",
+            "Transporte de luxo"
+          ],
+          "availableDates": [
+            "10-17 Abril, 2025",
+            "15-22 Maio, 2025",
+            "12-19 Setembro, 2025",
+            "10-17 Outubro, 2025"
+          ]
+        },
+        {
+          "id": "nova-zelandia-aventura",
+          "name": "Aventura na Nova Zelândia",
+          "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+          "price": "€3.199",
+          "duration": "14 dias / 13 noites",
+          "description": "Ilha Norte e Sul com atividades de aventura",
+          "includes": [
+            "13 noites em hotéis e lodges",
+            "Café da manhã diário",
+            "Atividades de aventura",
+            "Voos domésticos",
+            "Carro de aluguer"
+          ],
+          "availableDates": [
+            "20 Fevereiro - 5 Março, 2025",
+            "15-28 Outubro, 2025",
+            "10-23 Dezembro, 2025",
+            "15-28 Janeiro, 2026"
+          ]
+        },
+        {
+          "id": "tanzania-safari",
+          "name": "Safari na Tanzânia",
+          "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
+          "price": "€4.299",
+          "duration": "10 dias / 9 noites",
+          "description": "Serengeti, Ngorongoro e vida selvagem africana",
+          "includes": [
+            "9 noites em lodges de safari",
+            "Pensão completa",
+            "Safaris em veículo 4x4",
+            "Guias especializados",
+            "Taxas dos parques"
+          ],
+          "availableDates": [
+            "15-24 Junho, 2025",
+            "20-29 Julho, 2025",
+            "10-19 Setembro, 2025",
+            "5-14 Janeiro, 2026"
           ]
         }
       ]

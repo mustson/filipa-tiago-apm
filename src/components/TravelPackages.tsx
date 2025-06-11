@@ -7,11 +7,11 @@ import { Badge } from '@/components/ui/badge';
 import travelData from '@/data/travelPackages.json';
 
 const TravelPackages = () => {
-  const [selectedCategory, setSelectedCategory] = useState('europe');
+  const [selectedCategory, setSelectedCategory] = useState('europa');
 
   const handleWhatsAppContact = (packageName: string) => {
     const phoneNumber = "934327708";
-    const message = `Hi Bruno, I need info on your ${packageName} vacation package`;
+    const message = `Olá Bruno, preciso de informações sobre o seu pacote de férias ${packageName}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -20,13 +20,13 @@ const TravelPackages = () => {
     <section id="packages" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl font-black mb-6">
-            <span className="text-gray-900">Choose Your</span>
+          <h2 className="text-5xl md:text-6xl title-font mb-6">
+            <span className="text-gray-900">Escolha a Sua</span>
             <br />
-            <span className="gradient-text">Perfect Escape</span>
+            <span className="gradient-text">Escapada Perfeita</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Handpicked destinations and carefully crafted experiences that create memories to last a lifetime.
+            Destinos selecionados a dedo e experiências cuidadosamente elaboradas que criam memórias para toda a vida.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const TravelPackages = () => {
               <TabsTrigger
                 key={category.id}
                 value={category.id}
-                className="text-lg font-semibold rounded-xl data-[state=active]:bg-gradient-orange-purple data-[state=active]:text-white transition-all duration-300"
+                className="text-lg font-semibold rounded-xl data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all duration-300"
               >
                 {category.name}
               </TabsTrigger>
@@ -45,7 +45,7 @@ const TravelPackages = () => {
 
           {travelData.categories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.packages.map((pkg, index) => (
                   <Card 
                     key={pkg.id} 
@@ -65,7 +65,7 @@ const TravelPackages = () => {
                     </div>
                     
                     <CardHeader>
-                      <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors duration-300">
+                      <CardTitle className="text-xl title-font text-gray-900 group-hover:text-orange-600 transition-colors duration-300">
                         {pkg.name}
                       </CardTitle>
                       <CardDescription className="text-gray-600">
@@ -74,12 +74,12 @@ const TravelPackages = () => {
                     </CardHeader>
                     
                     <CardContent className="space-y-4">
-                      <div className="text-3xl font-black text-orange-600">
+                      <div className="text-2xl title-font text-orange-600">
                         {pkg.price}
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Includes:</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2">Inclui:</h4>
                         <ul className="space-y-1">
                           {pkg.includes.slice(0, 3).map((item, i) => (
                             <li key={i} className="text-sm text-gray-600 flex items-center">
@@ -89,14 +89,14 @@ const TravelPackages = () => {
                           ))}
                           {pkg.includes.length > 3 && (
                             <li className="text-sm text-gray-500 italic">
-                              +{pkg.includes.length - 3} more included
+                              +{pkg.includes.length - 3} mais incluído
                             </li>
                           )}
                         </ul>
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Available Dates:</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2">Datas Disponíveis:</h4>
                         <div className="flex flex-wrap gap-2">
                           {pkg.availableDates.slice(0, 2).map((date, i) => (
                             <Badge key={i} variant="outline" className="text-xs">
@@ -112,7 +112,7 @@ const TravelPackages = () => {
                         onClick={() => handleWhatsAppContact(pkg.name)}
                         className="w-full bg-gradient-orange-purple hover:shadow-lg text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
                       >
-                        Book Now via WhatsApp
+                        Reservar via WhatsApp
                       </Button>
                     </CardFooter>
                   </Card>

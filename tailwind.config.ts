@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
+				brockmann: ['Brockmann', '"SF Pro Display"', 'Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
