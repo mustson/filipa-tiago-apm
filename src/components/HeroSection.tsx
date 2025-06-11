@@ -104,7 +104,7 @@ const HeroSection = () => {
                 
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transform hover:scale-105 transition-transform duration-300">
                   <h3 className="text-xl font-light text-white mb-2">Viagens Personalizadas</h3>
-                  <p className="text-white/80 font-light">Cada roteiro é criado especialmente para si e as suas preferências.</p>
+                  <p className="text-white/80 font-light">Cada itinerário é criado especialmente para si e para as suas preferências.</p>
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transform hover:scale-105 transition-transform duration-300">

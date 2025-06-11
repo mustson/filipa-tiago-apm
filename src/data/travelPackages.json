@@ -58,7 +58,7 @@
             "9 noites em hotéis boutique",
             "Todas as refeições",
             "Transporte entre ilhas",
-            "Tours arqueológicos",
+            "Visitas guiadas arqueológicas",
             "Pôr do sol em Oia"
           ],
           "availableDates": [
@@ -120,7 +120,7 @@
           "includes": [
             "7 noites em resorts alpinos",
             "Pensão completa",
-            "Passeios de trem panorâmico",
+            "Passeios de comboio panorâmico",
             "Atividades de montanha",
             "Spa e wellness"
           ],
@@ -168,7 +168,7 @@
           "includes": [
             "9 noites em hotéis boutique",
             "Pequeno-almoço diário",
-            "Tours pelos templos",
+            "Visitas guiadas aos templos",
             "Aulas de culinária",
             "Sessões de yoga"
           ],
@@ -211,7 +211,7 @@
             "6 noites em resort all-inclusive",
             "Todas as refeições e bebidas",
             "Atividades aquáticas",
-            "Tours culturais",
+            "Visitas guiadas culturais",
             "Entretenimento noturno"
           ],
           "availableDates": [
@@ -232,7 +232,7 @@
             "11 noites em hotéis selecionados",
             "Pequeno-almoço diário",
             "Voos domésticos",
-            "Tours culturais",
+            "Visitas guiadas culturais",
             "Massagens tradicionais"
           ],
           "availableDates": [
@@ -279,9 +279,9 @@
           "includes": [
             "5 noites de alojamento",
             "Pequeno-almoço diário",
-            "Tours da Aurora Boreal",
+            "Excursões para ver a Aurora Boreal",
             "Entrada na Blue Lagoon",
-            "Tour do Círculo Dourado"
+            "Excursão ao Círculo Dourado"
           ],
           "availableDates": [
             "20-25 Janeiro, 2025",
