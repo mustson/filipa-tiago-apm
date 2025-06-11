@@ -31,12 +31,12 @@ const HeroSection = () => {
             />
           </div>
           
-          {/* Enhanced gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent"></div>
+          {/* Gradient overlay for all screens */}
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent"></div>
           
 
           
-          <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
+          <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
             <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
               <h1 className="font-light text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
