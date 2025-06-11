@@ -46,7 +46,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light">
-                Bruno Lopes é o seu personal experience traveler designer. Destinos cuidadosamente selecionados para viver experiências extraordinárias.
+                Destinos cuidadosamente selecionados para viver experiências extraordinárias.
               </p>
               
               <div className="flex gap-6 items-center justify-center">
