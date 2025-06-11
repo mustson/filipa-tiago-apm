@@ -45,8 +45,8 @@ Mensagem: ${formData.message}`;
             <span className="text-blue-500">Próxima Aventura</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Entre em contacto connosco para criar a viagem dos seus sonhos. 
-            O Bruno está pronto para personalizar cada detalhe da sua experiência de viagem.
+            
+            Estou disponível para ajudar a personalizar cada detalhe da sua experiência de viagem.
           </p>
         </div>
 

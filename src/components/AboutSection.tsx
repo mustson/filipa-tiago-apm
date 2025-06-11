@@ -1,74 +1,77 @@
+import { MapPin, Clock, Gem, BookOpenCheck } from 'lucide-react';
+
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-       <div className="max-w-7xl mx-auto px-3">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Coluna de Texto */}
-            <div className="animate-fade-in text-left lg:order-1">
-                <h2 className="text-5xl md:text-6xl title-font mb-8">
-                    <span className="text-gray-900">Bruno trabalha com </span>
-                    <br />
-                    <span className="text-blue-500">os seus sonhos, </span>
-                    <br />
-                    <span className="text-gray-900">não em vez deles.</span>
-                </h2>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                    Ao gerir <span className="text-orange-500 font-semibold">logística complexa</span>, 
-                    melhorar a <span className="text-purple-600 font-semibold">segurança da viagem</span>, 
-                    e aprender com <span className="text-orange-500 font-semibold">cada jornada</span>, 
-                    Bruno ajuda os viajantes a focar no que fazem melhor: 
-                    <span className="text-purple-600 font-semibold"> explorar, descobrir e criar memórias.</span>
-                </p>
+    <section id="about" className="relative py-20 lg:py-32">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1533810019453-7351dbd31aee?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Paisagem montanhosa ao pôr do sol"
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
 
-                <div className="space-y-4 mb-8">
-                    <div className="flex items-center space-x-3">
-                        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                        </div>
-                        <span className="text-lg text-gray-700">Planeamento personalizado de itinerários</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                        </div>
-                        <span className="text-lg text-gray-700">Suporte de viagem 24/7</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                        </div>
-                        <span className="text-lg text-gray-700">Experiências locais exclusivas</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                        </div>
-                        <span className="text-lg text-gray-700">Opções de reserva flexíveis</span>
-                    </div>
-                </div>
-
-                <div className="flex">
-                    <a
-                        href="#packages"
-                        className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300"
-                    >
-                        Ver Pacotes de Viagem
-                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-                    </a>
-                </div>
-            </div>
-
-            {/* Coluna da Imagem */}
-            <div className="animate-fade-in">
-                <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500 ease-in-out">
-                    <img
-                        src="https://images.unsplash.com/photo-1533810019453-7351dbd31aee?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Viajantes felizes numa paisagem montanhosa"
-                        className="w-full h-auto object-cover"
-                    />
-                </div>
-            </div>
+      {/* Content */}
+            <div className="relative z-10 max-w-7xl mx-auto bg-gray-900/60 backdrop-blur-lg rounded-3xl border border-white/10 p-8 sm:p-12 lg:p-16">
+        
+        {/* Section Header (Consistent with other sections) */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl title-font mb-6 text-white">
+            Uma parceria <span className="text-blue-400">nas suas viagens</span>
+          </h2>
+          <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+            Trabalhamos com os seus sonhos, não em vez deles.<br />
+            Ao gerir logística e segurança, o prazer de viajar volta a ser seu. <br />
+            Explore, descubra e crie memórias.
+          </p>
         </div>
+
+        {/* Benefits Grid inside a card */}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+            
+            {/* Benefício 1 */}
+            <div className="flex items-start space-x-4 text-white">
+              <MapPin className="w-7 h-7 flex-shrink-0 text-blue-400" />
+              <div>
+                <h3 className="font-semibold text-white">Itinerários Personalizados</h3>
+                <p className="text-white/70 text-sm mt-1">Viagens desenhadas à sua medida.</p>
+              </div>
+            </div>
+            
+            {/* Benefício 2 */}
+            <div className="flex items-start space-x-4 text-white">
+              <Clock className="w-7 h-7 flex-shrink-0 text-blue-400" />
+              <div>
+                <h3 className="font-semibold text-white">Suporte 24/7</h3>
+                <p className="text-white/70 text-sm mt-1">Assistência durante a sua viagem.</p>
+              </div>
+            </div>
+
+            {/* Benefício 3 */}
+            <div className="flex items-start space-x-4 text-white">
+              <Gem className="w-7 h-7 flex-shrink-0 text-blue-400" />
+              <div>
+                <h3 className="font-semibold text-white">Experiências Exclusivas</h3>
+                <p className="text-white/70 text-sm mt-1">Acesso a locais e atividades únicas.</p>
+              </div>
+            </div>
+
+            {/* Benefício 4 */}
+            <div className="flex items-start space-x-4 text-white">
+              <BookOpenCheck className="w-7 h-7 flex-shrink-0 text-blue-400" />
+              <div>
+                <h3 className="font-semibold text-white">Reservas Flexíveis</h3>
+                <p className="text-white/70 text-sm mt-1">Opções que se adaptam aos seus planos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );
