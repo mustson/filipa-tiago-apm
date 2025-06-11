@@ -64,7 +64,7 @@ const WhyBrunoSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
             Mais de uma década de excelência a criar experiências extraordinárias.
-            Descubra porque centenas de viajantes confiam no Bruno para as suas aventuras mais especiais.
+            Descubra porque centenas de pessoas confiam na experiência do Bruno.
           </p>
         </div>
 

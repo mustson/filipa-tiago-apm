@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../styles/hero.css';
 
 const HeroSection = () => {
@@ -33,8 +34,7 @@ const HeroSection = () => {
           {/* Enhanced gradient overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent"></div>
           
-          {/* Mobile gradient overlay - darker at top */}
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent sm:hidden"></div>
+
           
           <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
@@ -62,6 +62,19 @@ const HeroSection = () => {
                 >
                   <span>Saber Mais</span>
                   <span className="text-xl">→</span>
+                </a>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="mt-8 flex justify-center items-center gap-4">
+                <a href="https://www.instagram.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                    <Instagram className="h-5 w-5" />
+                </a>
+                <a href="https://www.facebook.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                    <Facebook className="h-5 w-5" />
+                </a>
+                <a href="https://www.linkedin.com/in/bruno-lopes-a55a35b/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                    <Linkedin className="h-5 w-5" />
                 </a>
               </div>
             </div>

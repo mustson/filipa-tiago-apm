@@ -26,7 +26,7 @@ const TravelPackages = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cada viagem é uma experiência única, desenhada especialmente para si.
-            Descubra o mundo através dos olhos de um personal experience traveler designer.
+            Descubra o mundo através dos olhos de um experiente personal experience designer.
           </p>
         </div>
 
