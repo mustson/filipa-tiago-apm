@@ -20,7 +20,7 @@ const AboutSection = () => {
         {/* Section Header (Consistent with other sections) */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl title-font mb-6 text-white">
-            Uma parceria <span className="text-blue-400">nas suas viagens</span>
+            Um parceiro <span className="text-blue-400">nas suas viagens</span>
           </h2>
           <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
             Trabalhamos com os seus sonhos, não em vez deles.<br />
