@@ -109,10 +109,10 @@ const TravelPackages = () => {
                     
                     <CardFooter>
                       <Button
+                        className="w-full bg-orange-400 hover:bg-orange-500 text-white font-light"
                         onClick={() => handleWhatsAppContact(pkg.name)}
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md"
                       >
-                        Contactar via WhatsApp
+                        Saber mais via WhatsApp
                       </Button>
                     </CardFooter>
                   </Card>

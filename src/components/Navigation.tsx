@@ -14,38 +14,28 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/90 backdrop-blur-lg shadow-lg' : 'bg-white/80 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <h1 className={`transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            }`}>
-              <span className="font-bold text-2xl tracking-tight uppercase">BRUNO LOPES</span>
-              <span className="font-light text-xl tracking-wider uppercase ml-2">TRAVEL AGENT</span>
+            <h1 className="text-gray-900">
+              <span className="font-bold text-2xl tracking-wider uppercase">BRUNO LOPES</span>
+              <span className="font-extralight text-xl tracking-widest uppercase ml-2">EXPERIENCE DESIGNER</span>
             </h1>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
-              isScrolled ? 'text-gray-700' : 'text-white'
-            }`}>
+            <a href="#home" className="text-gray-900 font-medium transition-colors duration-300 hover:text-orange-500">
               Início
             </a>
-            <a href="#packages" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
-              isScrolled ? 'text-gray-700' : 'text-white'
-            }`}>
+            <a href="#packages" className="text-gray-900 font-medium transition-colors duration-300 hover:text-orange-500">
               Viagens
             </a>
-            <a href="#about" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
-              isScrolled ? 'text-gray-700' : 'text-white'
-            }`}>
+            <a href="#about" className="text-gray-900 font-medium transition-colors duration-300 hover:text-orange-500">
               Sobre
             </a>
-            <a href="#contact" className={`font-medium transition-colors duration-300 hover:text-orange-500 ${
-              isScrolled ? 'text-gray-700' : 'text-white'
-            }`}>
+            <a href="#contact" className="text-gray-900 font-medium transition-colors duration-300 hover:text-orange-500">
               Contacto
             </a>
           </div>
