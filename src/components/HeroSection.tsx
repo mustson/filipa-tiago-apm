@@ -31,10 +31,10 @@ const HeroSection = () => {
           </div>
           
           {/* Enhanced gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-900/30 to-transparent h-1/2"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent h-1/2 top-1/2"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent"></div>
+          
           {/* Mobile gradient overlay - darker at top */}
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/95 via-blue-900/70 to-blue-900/30 sm:hidden"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/30 to-transparent sm:hidden"></div>
           
           <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
@@ -92,17 +92,17 @@ const HeroSection = () => {
       {/* Mobile cards section - Outside hero, single column */}
       <section className="md:hidden bg-white px-4 py-12">
         <div className="max-w-lg mx-auto space-y-6">
-          <div className="bg-gradient-to-br from-gray-900 to-blue-900 rounded-2xl p-6">
+          <div className="bg-blue-700/90 rounded-2xl p-6">
             <h3 className="text-xl font-light text-white mb-2">Destinos Exclusivos</h3>
             <p className="text-white/80 font-light">Explore lugares únicos e experiências inesquecíveis em todo o mundo.</p>
           </div>
           
-          <div className="bg-gradient-to-br from-gray-900 to-blue-900 rounded-2xl p-6">
+          <div className="bg-blue-700/90 rounded-2xl p-6">
             <h3 className="text-xl font-light text-white mb-2">Viagens Personalizadas</h3>
             <p className="text-white/80 font-light">Cada roteiro é criado especialmente para si e as suas preferências.</p>
           </div>
           
-          <div className="bg-gradient-to-br from-gray-900 to-blue-900 rounded-2xl p-6">
+          <div className="bg-blue-700/90 rounded-2xl p-6">
             <h3 className="text-xl font-light text-white mb-2">Momentos Mágicos</h3>
             <p className="text-white/80 font-light">Experiências cuidadosamente selecionadas para momentos inesquecíveis.</p>
           </div>

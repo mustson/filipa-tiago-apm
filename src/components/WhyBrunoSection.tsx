@@ -45,10 +45,22 @@ const WhyBrunoSection = () => {
       <div className="absolute inset-0 noise-overlay"></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Porquê Viajar com</span>
+          <h2 className="text-5xl md:text-6xl title-font mb-6 hidden sm:block">
+            <span className="text-gray-900">Bruno trabalha com</span>
             <br />
-            <span className="gradient-text">Bruno Lopes</span>
+            <span className="text-gray-900">os seus</span>
+            <br />
+            <span className="gradient-text">sonhos, não</span>
+            <br />
+            <span className="text-gray-900">em vez deles.</span>
+          </h2>
+          <h2 className="text-5xl md:text-6xl title-font mb-6 sm:hidden">
+            <span className="text-gray-900">Bruno trabalha com</span>
+            <br />
+            <span className="text-gray-900">os seus</span>
+            <span className="gradient-text"> sonhos, não</span>
+            <br />
+            <span className="text-gray-900">em vez deles.</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
             Mais de uma década de excelência a criar experiências extraordinárias.
