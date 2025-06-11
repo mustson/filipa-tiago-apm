@@ -25,8 +25,7 @@ const TravelPackages = () => {
             <span className="gradient-text">Personalizáveis</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Cada viagem é uma experiência única, desenhada especialmente para si.
-            Descubra o mundo através dos olhos de um experiente personal experience designer.
+            Cada viagem é única e inesquecível, descubra o mundo com a ajuda de um agente de viagens ou travel Designer.
           </p>
         </div>
 
