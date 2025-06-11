@@ -5,13 +5,11 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="animate-fade-in">
             <h2 className="text-5xl md:text-6xl title-font mb-8">
-              <span className="text-gray-900">Bruno trabalha com</span>
+              <span className="text-gray-900">Bruno trabalha com </span>
               <br />
-              <span className="text-gray-900">os seus</span>
+              <span className="text-blue-500">os seus sonhos, </span>
               <br />
-              <span className="text-blue-500">sonhos, não</span>
-              <br />
-              <span className="text-gray-900">em vez deles.</span>
+              <span className="text-gray-900">não em vez deles.</span>
             </h2>
           </div>
           

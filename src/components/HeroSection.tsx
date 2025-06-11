@@ -11,8 +11,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="min-h-screen h-auto sm:h-screen bg-white px-0 sm:px-4 pt-16 pb-16 sm:pb-8 flex items-center justify-center">
-        <div className="relative w-full h-auto min-h-[120vh] sm:h-[85vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
+      <section id="home" className="min-h-screen bg-white px-0 sm:px-4 pt-16 sm:pt-24 pb-16 flex items-center justify-center">
+        <div className="relative w-full h-auto min-h-[120vh] sm:h-[75vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
             <img 
