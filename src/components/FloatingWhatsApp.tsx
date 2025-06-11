@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
@@ -18,10 +17,10 @@ const FloatingWhatsApp = () => {
         onClick={handleWhatsAppContact}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl transition-all duration-300 transform hover:scale-110 group relative overflow-hidden p-1"
+        className="w-24 h-24 rounded-full bg-green-500 hover:bg-green-600 text-white transition-all duration-300 transform hover:scale-110 group relative overflow-hidden p-2"
       >
         <svg 
-          className="w-12 h-12 transition-transform duration-300 group-hover:scale-110" 
+          className="w-20 h-20 transition-transform duration-300 group-hover:scale-110" 
           fill="currentColor" 
           viewBox="0 0 24 24"
         >
@@ -29,7 +28,7 @@ const FloatingWhatsApp = () => {
         </svg>
         
         {isHovered && (
-          <div className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap shadow-xl">
+          <div className="absolute right-28 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
             Conversar com Bruno
             <div className="absolute right-[-6px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-[6px] border-l-gray-900 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
           </div>

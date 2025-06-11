@@ -20,18 +20,18 @@ const TravelPackages = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Pacotes de Viagem</span>
+            <span className="text-gray-900">Pacotes de Destinos Únicos</span>
             <br />
-            <span className="gradient-text">Exclusivos</span>
+            <span className="gradient-text">100% Personalizáveis</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra destinos únicos com pacotes personalizados pelo Bruno Lopes. 
-            Cada viagem é cuidadosamente planeada para criar experiências autênticas e memoráveis.
+            Cada viagem é uma experiência única, desenhada especialmente para si.
+            Descubra o mundo através dos olhos de um personal experience traveler designer.
           </p>
         </div>
 
         <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-12 h-14 bg-white shadow-lg rounded-2xl p-2">
+          <TabsList className="grid w-full grid-cols-3 mb-12 h-14 bg-white rounded-2xl p-2">
             {travelData.categories.map((category) => (
               <TabsTrigger
                 key={category.id}
@@ -49,7 +49,7 @@ const TravelPackages = () => {
                 {category.packages.map((pkg, index) => (
                   <Card 
                     key={pkg.id} 
-                    className="overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-scale-in border-0 shadow-lg"
+                    className="overflow-hidden group transition-all duration-500 transform hover:-translate-y-2 animate-scale-in border-0"
                     style={{ animationDelay: `${index * 200}ms` }}
                   >
                     <div className="relative h-64 overflow-hidden">

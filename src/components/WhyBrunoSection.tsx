@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const WhyBrunoSection = () => {
@@ -61,7 +60,7 @@ const WhyBrunoSection = () => {
           {reasons.map((reason, index) => (
             <Card 
               key={index}
-              className="relative overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 shadow-lg animate-scale-in"
+              className="relative overflow-hidden group transition-all duration-500 transform hover:-translate-y-2 border-0 animate-scale-in"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${reason.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>

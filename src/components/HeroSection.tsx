@@ -9,48 +9,43 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen hero-beach-bg noise-overlay flex items-center justify-center relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-        <div className="animate-fade-in">
-          <div className="mb-10 flex flex-col items-center">
-            <img 
-              src="/LOGO.png" 
-              alt="Bruno Lopes Logo" 
-              width={300} 
-              height={300} 
-              className="mb-6"
-            />
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl title-font mb-8 leading-tight">
-            <span className="text-white">Viaje com</span>
+    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 to-blue-900">
+      {/* Background overlay with reduced opacity */}
+      <div className="absolute inset-0 hero-beach-bg opacity-30"></div>
+      
+      <div className="relative w-full max-w-7xl mx-auto px-4 min-h-screen flex items-center">
+        <div className="w-full text-center space-y-8">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+            <span className="text-white">Descubra o Mundo com as</span>
             <br />
-            <span className="text-white">Bruno Lopes</span>
+            <span className="text-orange-400">Experiências Únicas</span>
             <br />
-            <span className="text-white">Explore o Mundo</span>
+            <span className="text-white">do Bruno</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Especialista em criar viagens personalizadas e experiências inesquecíveis. 
-            Cada destino é cuidadosamente selecionado para proporcionar momentos únicos e memórias para toda a vida.
+          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Bruno Lopes é o seu personal experience traveler designer.
+            Cada destino é cuidadosamente selecionado para criar experiências extraordinárias.
           </p>
           
-          <div className="flex justify-center">
+          <div className="flex gap-4 items-center justify-center mt-12">
             <Button 
               onClick={scrollToPackages}
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 text-xl font-bold rounded-full transition-all duration-300 shadow-lg"
+              className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-6 text-lg font-semibold rounded-xl transition-all duration-300"
             >
-              DESCOBRIR VIAGENS
+              Explorar Destinos
             </Button>
+            <a href="#about" className="text-white/90 hover:text-white font-medium transition-colors duration-300">
+              Saiba Mais →
+            </a>
           </div>
         </div>
       </div>
       
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-500"></div>
+      {/* Decorative elements */}
+      <div className="absolute top-20 left-10 w-40 h-40 bg-orange-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-56 h-56 bg-blue-400/20 rounded-full blur-3xl"></div>
     </section>
   );
 };
