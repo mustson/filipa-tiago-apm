@@ -1,117 +1,134 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { agentConfig } from '@/config';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Badge } from '@/components/ui/badge';
-import travelData from '@/data/travelPackages.json';
+import { agentConfig, design, siteConfig } from "@/config";
+import travelPackages from "@/data/travelPackages.json";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { CheckCircle, MapPin } from 'lucide-react';
+
+// Define a type for a package for stronger type safety
+interface Price {
+  value: number;
+  currency: string;
+  type: string;
+}
+
+interface Package {
+  id: string;
+  name: string;
+  image: string;
+  price: Price;
+  duration: string;
+  description: string;
+  includes: string[];
+  availableDates: string[];
+}
 
 const TravelPackages = () => {
-  const [selectedCategory, setSelectedCategory] = useState('europa');
-
   const handleWhatsAppContact = (packageName: string) => {
-    const phoneNumber = "934327708";
-      const message = `Olá ${agentConfig.firstName}, preciso de informações sobre o seu pacote de férias ${packageName}`;
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const message = `Olá ${agentConfig.firstName}, gostaria de saber mais sobre o pacote "${packageName}".`;
+    const whatsappUrl = `https://wa.me/${agentConfig.whatsapp}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <section id="packages" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl title-font mb-6">
-            <span className="text-gray-900">Pacotes de Destinos Únicos e</span>
-            <br />
-            <span className="gradient-text">Personalizáveis</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Cada viagem é única e inesquecível, descubra o mundo com a ajuda de um agente de viagens ou travel Designer.
-          </p>
+    <section id="packages" className={`py-20 md:py-32 bg-${design.colors.background}`}>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+            <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>Explore as nossas coleções</p>
+            <h2 
+                className="text-7xl md:text-9xl font-light tracking-tighter text-gray-900 mt-2"
+                style={{ fontFamily: design.fonts.title }}
+            >
+                {siteConfig.sections.packages.title}
+            </h2>
+            <p className={`text-lg text-${design.colors.textLight} mt-6 max-w-3xl mx-auto`} style={{ fontFamily: design.fonts.body }}>
+                {siteConfig.sections.packages.description}
+            </p>
         </div>
 
-        <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-12 h-14 bg-white rounded-2xl p-2">
-            {travelData.categories.map((category) => (
-              <TabsTrigger
-                key={category.id}
-                value={category.id}
-                className="text-lg font-semibold rounded-xl data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all duration-300"
+        <Tabs defaultValue={travelPackages.categories[0].id} className="w-full">
+          <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-10 bg-transparent p-0 rounded-none border-0 shadow-none">
+            {travelPackages.categories.map((category) => (
+              <TabsTrigger 
+                key={category.id} 
+                value={category.id} 
+                className="text-slate-400 data-[state=active]:text-slate-900 data-[state=active]:bg-transparent data-[state=active]:shadow-none rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 py-3 px-6 font-medium transition-all"
+                style={{ fontFamily: design.fonts.body }}
               >
                 {category.name}
               </TabsTrigger>
             ))}
           </TabsList>
 
-          {travelData.categories.map((category) => (
-            <TabsContent key={category.id} value={category.id} className="space-y-8">
+          {travelPackages.categories.map((category) => (
+            <TabsContent key={category.id} value={category.id}>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {category.packages.map((pkg, index) => (
-                  <Card 
-                    key={pkg.id} 
-                    className="overflow-hidden group transition-all duration-500 transform hover:-translate-y-2 animate-scale-in border-0"
-                    style={{ animationDelay: `${index * 200}ms` }}
-                  >
-                    <div className="relative h-64 overflow-hidden">
-                      <img
-                        src={pkg.image}
-                        alt={pkg.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      <Badge className="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 text-sm font-semibold">
-                        {pkg.duration}
-                      </Badge>
-                    </div>
-                    
-                    <CardHeader>
-                      <CardTitle className="text-xl title-font text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-                        {pkg.name}
-                      </CardTitle>
-                      <CardDescription className="text-gray-600">
-                        {pkg.description}
-                      </CardDescription>
-                    </CardHeader>
-                    
-                    <CardContent className="space-y-4">
-                      <div className="text-2xl title-font text-blue-600">
-                        {pkg.price}
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Inclui:</h4>
-                        <ul className="space-y-1">
-                          {pkg.includes.map((item, i) => (
-                            <li key={i} className="text-sm text-gray-600 flex items-center">
-                              <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Datas Disponíveis:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {pkg.availableDates.slice(0, 2).map((date, i) => (
-                            <Badge key={i} variant="outline" className="text-xs">
-                              {date}
-                            </Badge>
-                          ))}
+                {category.packages.map((pkg: Package) => {
+                  return (
+                    <Card key={pkg.id} className={`bg-${design.colors.cardBackground} rounded-2xl overflow-hidden shadow-lg border-0 hover:shadow-xl transition-all duration-300 flex flex-col`}>
+                      <CardHeader className="p-0">
+                        <div className="relative">
+                          <img 
+                            src={pkg.image} 
+                            alt={pkg.name} 
+                            className="w-full h-56 object-cover" 
+                          />
+                          <div className="absolute top-4 left-4 bg-black/60 text-white text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur-sm">
+                            {pkg.duration}
+                          </div>
                         </div>
-                      </div>
-                    </CardContent>
-                    
-                    <CardFooter>
-                      <Button
-                        className="w-full bg-orange-400 hover:bg-orange-500 text-white font-light"
-                        onClick={() => handleWhatsAppContact(pkg.name)}
-                      >
-                        Saber mais via WhatsApp
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                ))}
+                      </CardHeader>
+                      
+                      <CardContent className="p-6 flex-grow">
+                        <div className="flex items-start gap-2 mb-3">
+                          <MapPin className={`w-4 h-4 text-${design.colors.primary} mt-1 flex-shrink-0`} />
+                          <div>
+                            <CardTitle className={`text-xl font-bold text-${design.colors.text} leading-tight`} style={{ fontFamily: design.fonts.title }}>
+                              {pkg.name}
+                            </CardTitle>
+                            <p className={`text-sm text-${design.colors.textLight} mt-1`} style={{ fontFamily: design.fonts.body }}>{pkg.duration}</p>
+                          </div>
+                        </div>
+                        
+                        <p className={`text-${design.colors.textLight} mb-4 text-sm leading-relaxed line-clamp-2`} style={{ fontFamily: design.fonts.body }}>
+                          {pkg.description}
+                        </p>
+                        
+                        <div className="space-y-2 mb-4">
+                          {pkg.includes.slice(0, 2).map((item, index) => (
+                            <div key={index} className="flex items-start">
+                              <CheckCircle className={`w-4 h-4 text-${design.colors.primary} mr-2 mt-0.5 flex-shrink-0`} />
+                              <span className={`text-${design.colors.text} text-sm`} style={{ fontFamily: design.fonts.body }}>{item}</span>
+                            </div>
+                          ))}
+                          {pkg.includes.length > 2 && (
+                            <p className={`text-orange-500 text-sm font-medium mt-2`} style={{ fontFamily: design.fonts.body }}>
+                              +{pkg.includes.length - 2} mais incluído
+                            </p>
+                          )}
+                        </div>
+                      </CardContent>
+                      
+                      <CardFooter className="p-6">
+                        <div className="flex justify-between items-center w-full">
+                          <div className="flex flex-col items-start">
+                            <span className="text-sm font-light" style={{ fontFamily: design.fonts.body, color: design.colors.textLight }}>{pkg.price.type}</span>
+                            <span className="text-3xl font-medium" style={{ fontFamily: design.fonts.title, color: design.colors.text }}>
+                              {pkg.price.currency}{pkg.price.value}
+                            </span>
+                          </div>
+                          <Button 
+                            onClick={() => handleWhatsAppContact(pkg.name)}
+                            className={`${design.buttons.primary.bg} ${design.buttons.primary.hover} ${design.buttons.primary.textColor} font-bold py-3 px-5 rounded-lg text-sm shadow-lg hover:shadow-orange-500/30 transition-all duration-300`}
+                            style={{ fontFamily: design.fonts.body }}
+                          >
+                            {design.buttons.primary.text}
+                          </Button>
+                        </div>
+                      </CardFooter>
+                    </Card>
+                  );
+                })}
               </div>
             </TabsContent>
           ))}

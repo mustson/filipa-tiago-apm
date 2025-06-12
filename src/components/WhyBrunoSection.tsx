@@ -1,43 +1,38 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { agentConfig } from '@/config';
+import { agentConfig, design } from '@/config';
+import { Globe, ShieldCheck, Star, Users, Map, Coffee } from 'lucide-react';
 
-const WhyBrunoSection = () => {
+const WhyHugoSection = () => {
   const reasons = [
     {
-      title: "Experiência Exclusiva",
-      description: "Cada viagem é desenhada à sua medida, refletindo os seus desejos e aspirações pessoais.",
-      icon: "✨",
-      gradient: "from-blue-500 to-cyan-500"
+      title: "Paixão que Gera Resultados",
+      description: `Com mais de 10 anos de experiência, não vendo apenas viagens, eu crio o roteiro dos seus sonhos. A minha paixão é a sua garantia de uma experiência inesquecível.`,
+      icon: Star
     },
     {
-      title: "Destinos Únicos",
-      description: "Acesso privilegiado a locais extraordinários e momentos verdadeiramente singulares.",
-      icon: "🌏",
-      gradient: "from-purple-500 to-pink-500"
+      title: "Curadoria de Especialista",
+      description: `Esqueça os destinos genéricos. Eu ofereço acesso a lugares e experiências que só um verdadeiro conhecedor pode proporcionar, longe das multidões.`,
+      icon: Globe
     },
     {
-      title: "Acompanhamento Premium",
-      description: "Assistência personalizada 24/7 durante toda a sua jornada, garantindo tranquilidade absoluta.",
-      icon: "👑",
-      gradient: "from-green-500 to-teal-500"
+      title: "Transparência e Confiança",
+      description: `O seu investimento é tratado com o máximo respeito. Ofereço total clareza nos custos, sem taxas escondidas ou surpresas desagradáveis.`,
+      icon: ShieldCheck
     },
     {
-      title: "Excelência em Valor",
-      description: "Experiências extraordinárias com transparência total e valor incomparável.",
-      icon: "💎",
-      gradient: "from-orange-500 to-red-500"
+      title: "Roteiros 100% Personalizados",
+      description: `Não trabalho com pacotes prontos. Cada detalhe da sua viagem é pensado para atender aos seus interesses, ritmo e estilo.`,
+      icon: Map
     },
     {
-      title: "Conexões Privilegiadas",
-      description: "Rede exclusiva de parceiros locais para momentos autênticos e memoráveis.",
-      icon: "🤝",
-      gradient: "from-indigo-500 to-purple-500"
+      title: "Parceiros de Confiança",
+      description: `A minha rede de contatos globais garante que você terá o melhor serviço, seja no hotel, no restaurante ou no transporte.`,
+      icon: Users
     },
     {
-      title: "Atenção ao Detalhe",
-      description: "Cada momento da sua viagem é meticulosamente planeado e orquestrado à perfeição.",
-      icon: "🎯",
-      gradient: "from-teal-500 to-blue-500"
+      title: "Suporte Real, a Qualquer Hora",
+      description: `Eu estou pessoalmente disponível para garantir que a sua viagem seja perfeita. Sem robôs ou intermediários, apenas um especialista dedicado a si.`,
+      icon: Coffee
     }
   ];
 
@@ -46,38 +41,36 @@ const WhyBrunoSection = () => {
       <div className="absolute inset-0 noise-overlay"></div>
       <div className="max-w-7xl mx-auto px-3 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl title-font mb-6 hidden sm:block">
-            <span className="text-gray-900">{agentConfig.firstName} trabalha com</span>
-            <br />
-            <span className="gradient-text">os seus sonhos</span>
-            <br />
-            <span className="text-gray-900">não em vez deles.</span>
+          <h2 
+            className="font-normal mb-6"
+            style={{ 
+              fontFamily: design.headings.fontFamily,
+              fontSize: design.headings.fontSize,
+              lineHeight: design.headings.lineHeight,
+              fontWeight: design.headings.fontWeight,
+              letterSpacing: design.headings.letterSpacing,
+              color: design.headings.color
+            }}
+          >
+            Por que viajar com o {agentConfig.firstName}?
           </h2>
-          <h2 className="text-5xl md:text-6xl title-font mb-6 sm:hidden">
-            <span className="text-gray-900">{agentConfig.firstName} trabalha com</span>
-            <br />
-            <span className="gradient-text">os seus sonhos</span>
-            
-            <br />
-            <span className="text-gray-900">não em vez deles.</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
-            Mais de uma década de excelência a criar experiências extraordinárias.
-            Descubra porque centenas de pessoas confiam na experiência do {agentConfig.firstName}.
+          
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" style={{ fontFamily: design.fonts.body }}>
+            A diferença entre uma boa viagem e uma viagem memorável está na experiência e na dedicação de quem a planeja. Veja como a minha abordagem transforma viagens em sonhos realizados.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
-            <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 rounded-2xl transform hover:scale-[1.02] transition-all duration-300">
+            <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl transition-all duration-300 shadow-sm">
               <CardHeader>
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl bg-gradient-to-br ${reason.gradient} text-white mb-4`}>
-                  {reason.icon}
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl bg-orange-500 text-white mb-4">
+                  <reason.icon className="w-6 h-6" />
                 </div>
-                <CardTitle className="text-xl font-light">{reason.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold text-gray-900" style={{ fontFamily: design.fonts.title }}>{reason.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-gray-600 font-light leading-relaxed">
+                <CardDescription className="text-gray-600 leading-relaxed" style={{ fontFamily: design.fonts.body }}>
                   {reason.description}
                 </CardDescription>
               </CardContent>
@@ -89,4 +82,4 @@ const WhyBrunoSection = () => {
   );
 };
 
-export default WhyBrunoSection;
+export default WhyHugoSection;

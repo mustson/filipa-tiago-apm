@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,6 +21,8 @@ export default {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
 				brockmann: ['Brockmann', '"SF Pro Display"', 'Inter', 'sans-serif'],
+				title: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+				body: ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

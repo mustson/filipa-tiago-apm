@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { siteConfig, agentConfig, design } from '@/config';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,8 +21,10 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-gray-900 flex items-baseline">
-              <span className="font-bold text-xl sm:text-2xl tracking-tight sm:tracking-wider uppercase">BRUNO LOPES</span>
-              <span className="font-extralight text-sm sm:text-xl tracking-tight sm:tracking-widest uppercase ml-1 sm:ml-2">TRAVEL AGENT</span>
+              <a href="#" className="text-lg font-bold tracking-tight" style={{ fontFamily: design.fonts.title }}>
+                {siteConfig.fullTitle}
+              </a>
+              
             </h1>
           </div>
           
