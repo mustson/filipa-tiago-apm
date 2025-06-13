@@ -85,17 +85,17 @@ const HeroSection = () => {
             {/* Floating cards - Visible on all devices */}
             <div className="w-full mt-8 sm:mt-16 lg:mt-24">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transition-transform duration-300">
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                   <h3 className="text-xl font-semibold text-white mb-2">Curadoria Especializada</h3>
                   <p className="text-white/80">Esqueça os guias turísticos. Crio roteiros baseados em experiências reais, para que você conheça o coração de cada destino.</p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transition-transform duration-300">
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                   <h3 className="text-xl font-semibold text-white mb-2">Planejamento Completo</h3>
                   <p className="text-white/80">Do seu hotel aos seus jantares, cuido de cada detalhe. A sua única preocupação é aproveitar a viagem.</p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 transition-transform duration-300">
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                   <h3 className="text-xl font-semibold text-white mb-2">Suporte Total</h3>
                   <p className="text-white/80">Estou disponível 24/7 durante a sua viagem para garantir que tudo corra perfeitamente. Viaje com tranquilidade.</p>
                 </div>
