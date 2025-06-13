@@ -43,24 +43,17 @@ const AboutSection = () => {
         <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col justify-center items-center text-center mt-8">
           {/* Main content */}
           <div className="mb-10 sm:mb-16 max-w-4xl">
-            <h2 
-              className="font-normal tracking-tight mb-9"
-              style={{ 
-                fontFamily: design.headings.fontFamily,
-                fontSize: design.headings.fontSize,
-                lineHeight: '1.1', // Usando um line-height menor para melhor balanceamento
-                fontWeight: design.headings.fontWeight,
-                letterSpacing: design.headings.letterSpacing,
-                color: 'white'
-              }}
+            <p className="text-lg sm:text-xl text-white/80 mb-2" style={{ fontFamily: design.fonts.body }}>
+              Trabalhamos com os seus sonhos.
+            </p>
+            <h2
+              className="text-7xl md:text-9xl font-light tracking-tighter text-white mt-2"
+              style={{ fontFamily: design.fonts.title }}
             >
-              Um parceiro <span className="text-cyan-700 block mt-2">nas suas viagens</span>
+              Um parceiro nas suas viagens
             </h2>
-            
-            <div className="space-y-3 text-lg text-white/90 max-w-2xl mx-auto" style={{ fontFamily: design.fonts.body, lineHeight: '1.4' }}>
-              <p>Trabalhamos com os seus sonhos, não em vez deles.</p>
-              <p>Ao gerir logística e segurança, o prazer de viajar volta a ser seu.</p>
-              <p>Explore, descubra e crie memórias.</p>
+            <div className="mt-6 space-y-3 text-base sm:text-lg text-white/90 max-w-md mx-auto px-4" style={{ fontFamily: design.fonts.body, lineHeight: '1.5' }}>
+              <p>Ao gerir logística e segurança, o prazer de viajar volta a ser seu. Explore, descubra e crie memórias.</p>
             </div>
           </div>
 

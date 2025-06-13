@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { agentConfig } from '@/config';
+import { agentConfig, design } from '@/config';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../styles/hero.css';
 
@@ -34,18 +34,19 @@ const HeroSection = () => {
             />
           </div>
           
-          {/* Gradient overlay for all screens */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-blue-950/80 via-blue-900/20 to-transparent"></div>
+          {/* Gradient overlay for all screens - reforçado para mobile */}
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-blue-950/90 via-blue-900/70 to-blue-950/20 sm:from-blue-950/80 sm:via-blue-900/40 sm:to-transparent"></div>
           
 
           
           <div className="relative z-20 w-full max-w-7xl mx-auto px-3 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
             <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
-                Roteiros <span className="font-bold">autênticos</span>,
-                <br />
-                criados por quem <span className="font-bold text-cyan-700">vive para viajar.</span>
+              <h1
+                className="text-7xl md:text-8xl lg:text-9xl font-light tracking-tighter text-white mt-2 md:max-w-5xl md:mx-auto"
+                style={{ fontFamily: design.fonts.title }}
+              >
+                Roteiros autênticos, criados por quem <span style={{ color: design.colors.highlight }}>vive para viajar</span>
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -85,18 +86,18 @@ const HeroSection = () => {
             {/* Floating cards - Visible on all devices */}
             <div className="w-full mt-8 sm:mt-16 lg:mt-24">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <h3 className="text-xl font-semibold text-white mb-2">Curadoria Especializada</h3>
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
+                  <h3 className="text-xl font-normal text-white mb-2">Curadoria Especializada</h3>
                   <p className="text-white/80">Esqueça os guias turísticos. Crio roteiros baseados em experiências reais, para que você conheça o coração de cada destino.</p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <h3 className="text-xl font-semibold text-white mb-2">Planejamento Completo</h3>
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
+                  <h3 className="text-xl font-normal text-white mb-2">Planejamento Completo</h3>
                   <p className="text-white/80">Do seu hotel aos seus jantares, cuido de cada detalhe. A sua única preocupação é aproveitar a viagem.</p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <h3 className="text-xl font-semibold text-white mb-2">Suporte Total</h3>
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
+                  <h3 className="text-xl font-normal text-white mb-2">Suporte Total</h3>
                   <p className="text-white/80">Estou disponível 24/7 durante a sua viagem para garantir que tudo corra perfeitamente. Viaje com tranquilidade.</p>
                 </div>
               </div>
