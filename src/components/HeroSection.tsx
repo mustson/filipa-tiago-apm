@@ -85,7 +85,7 @@ const HeroSection = () => {
 
             {/* Floating cards - Visible on all devices */}
             <div className="w-full mt-8 sm:mt-16 lg:mt-24">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
                   <h3 className="text-xl font-normal text-white mb-2">Curadoria Especializada</h3>
                   <p className="text-white/80">Esqueça os guias turísticos. Crio roteiros baseados em experiências reais, para que você conheça o coração de cada destino.</p>

@@ -37,9 +37,9 @@ const WhyHugoSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="pt-24 pb-32 bg-white relative overflow-hidden">
       <div className="absolute inset-0 noise-overlay"></div>
-      <div className="max-w-7xl mx-auto px-3 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 pb-12 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 
             className={`${design.headings.classes.h2} text-gray-900 mb-6`}
@@ -53,9 +53,9 @@ const WhyHugoSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
           {reasons.map((reason, index) => (
-            <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl transition-all duration-300 shadow-sm">
+            <Card key={index} className="bg-white/95 backdrop-blur-sm border border-gray-200/80 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg">
               <CardHeader>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl bg-cyan-700 text-white mb-4">
                   <reason.icon className="w-6 h-6" />

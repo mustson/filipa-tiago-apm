@@ -40,7 +40,7 @@ const AboutSection = () => {
         {/* Dark overlay */}
         <div className="absolute inset-0 z-10 bg-black/70"></div>
         
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col justify-center items-center text-center mt-8">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col justify-center items-center text-center mt-8 mb-8">
           {/* Main content */}
           <div className="mb-10 sm:mb-16 max-w-4xl">
             <p className="text-lg sm:text-xl text-white/80 mb-2" style={{ fontFamily: design.fonts.body }}>
