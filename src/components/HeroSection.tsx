@@ -43,7 +43,7 @@ const HeroSection = () => {
             {/* Main content - Top aligned on mobile, centered on desktop */}
             <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
               <h1
-                className="text-7xl md:text-8xl lg:text-9xl font-light tracking-tighter text-white mt-2 md:max-w-5xl md:mx-auto"
+                className="text-7xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tighter text-white mt-2 md:max-w-5xl md:mx-auto"
                 style={{ fontFamily: design.fonts.title }}
               >
                 Roteiros autênticos, criados por quem <span style={{ color: design.colors.highlight }}>vive para viajar</span>
