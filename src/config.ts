@@ -11,6 +11,7 @@ export const design = {
     background: '[#EAEAEA]',
     cardBackground: 'white',
     accent: 'teal-400',
+    highlight: 'cyan-700',    // Cor para destaques e links
     headingColor: '#111827',
   },
   fonts: {

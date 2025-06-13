@@ -8,7 +8,7 @@ import { Mail, Phone } from 'lucide-react';
 const ContactSection = () => {
   const handleWhatsAppContact = () => {
     const message = `Olá ${agentConfig.firstName}, gostaria de planear a minha próxima viagem.`;
-    const whatsappUrl = `https://wa.me/${agentConfig.whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${agentConfig.whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -39,7 +39,7 @@ const ContactSection = () => {
           {/* WhatsApp Card */}
           <Card className={`bg-${design.colors.cardBackground} shadow-lg rounded-lg overflow-hidden`}>
             <CardHeader>
-              <CardTitle className={`flex items-center gap-3 text-2xl text-${design.colors.text}`} style={{ fontFamily: design.fonts.title }}>
+              <CardTitle className={`flex items-center gap-3 text-2xl font-normal text-${design.colors.text}`} style={{ fontFamily: design.fonts.title }}>
                 <Phone className={`w-7 h-7 text-${design.colors.primary}`} />
                 Conversa Rápida
               </CardTitle>
@@ -50,7 +50,7 @@ const ContactSection = () => {
               </p>
               <Button 
                 onClick={handleWhatsAppContact} 
-                className={`w-full ${design.buttons.whatsapp.bg} ${design.buttons.whatsapp.hover} ${design.buttons.whatsapp.textColor} font-bold py-3 text-base`}
+                className={`w-full ${design.buttons.whatsapp.bg} ${design.buttons.whatsapp.hover} ${design.buttons.whatsapp.textColor} font-normal py-3 text-base`}
                 style={{ fontFamily: design.fonts.body }}
               >
                 {design.buttons.whatsapp.text}
@@ -61,7 +61,7 @@ const ContactSection = () => {
           {/* Email Card */}
           <Card className={`bg-${design.colors.cardBackground} shadow-lg rounded-lg overflow-hidden`}>
             <CardHeader>
-              <CardTitle className={`flex items-center gap-3 text-2xl text-${design.colors.text}`} style={{ fontFamily: design.fonts.title }}>
+              <CardTitle className={`flex items-center gap-3 text-2xl font-normal text-${design.colors.text}`} style={{ fontFamily: design.fonts.title }}>
                 <Mail className={`w-7 h-7 text-${design.colors.primary}`} />
                 Pedido Detalhado
               </CardTitle>
@@ -72,7 +72,7 @@ const ContactSection = () => {
               </p>
               <Button 
                 onClick={handleEmailContact} 
-                className={`w-full ${design.buttons.secondary.bg} ${design.buttons.secondary.hover} ${design.buttons.secondary.textColor} font-bold py-3 text-base`}
+                className={`w-full ${design.buttons.secondary.bg} ${design.buttons.secondary.hover} ${design.buttons.secondary.textColor} font-normal py-3 text-base`}
                 style={{ fontFamily: design.fonts.body }}
               >
                 {design.buttons.secondary.text}

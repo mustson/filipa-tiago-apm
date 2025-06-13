@@ -3,7 +3,7 @@ import travelPackages from "@/data/travelPackages.json";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { CheckCircle, MapPin } from 'lucide-react';
+import { CheckCircle, MapPin, MessageCircle } from 'lucide-react';
 
 // Define a type for a package for stronger type safety
 interface Price {
@@ -104,9 +104,10 @@ const TravelPackages = () => {
                             </div>
                           ))}
                           {pkg.includes.length > 2 && (
-                            <p className={`text-teal-500 text-sm font-medium mt-2`} style={{ fontFamily: design.fonts.body }}>
-                              +{pkg.includes.length - 2} mais incluído
-                            </p>
+                            <div className="flex items-start mt-2">
+                              <MessageCircle className={`w-4 h-4 text-${design.colors.highlight} mr-2 mt-0.5 flex-shrink-0`} />
+                              <span className={`text-${design.colors.highlight} text-sm font-normal`} style={{ fontFamily: design.fonts.body }}>mais detalhes via WhatsApp</span>
+                            </div>
                           )}
                         </div>
                       </CardContent>
