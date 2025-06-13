@@ -36,7 +36,7 @@ const TravelPackages = () => {
         <div className="text-center mb-16">
             <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>Explore as nossas coleções</p>
             <h2 
-                className="text-7xl md:text-9xl font-light tracking-tighter text-gray-900 mt-2"
+                className={`${design.headings.classes.h2} text-gray-900 mt-2`}
                 style={{ fontFamily: design.fonts.title }}
             >
                 {siteConfig.sections.packages.title}

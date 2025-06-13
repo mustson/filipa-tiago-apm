@@ -37,20 +37,13 @@ const WhyHugoSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 noise-overlay"></div>
       <div className="max-w-7xl mx-auto px-3 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 
-            className="font-normal mb-6"
-            style={{ 
-              fontFamily: design.headings.fontFamily,
-              fontSize: design.headings.fontSize,
-              lineHeight: design.headings.lineHeight,
-              fontWeight: design.headings.fontWeight,
-              letterSpacing: design.headings.letterSpacing,
-              color: design.headings.color
-            }}
+            className={`${design.headings.classes.h2} text-gray-900 mb-6`}
+            style={{ fontFamily: design.fonts.title }}
           >
             Por que viajar com o {agentConfig.firstName}?
           </h2>
@@ -60,7 +53,7 @@ const WhyHugoSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
           {reasons.map((reason, index) => (
             <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl transition-all duration-300 shadow-sm">
               <CardHeader>

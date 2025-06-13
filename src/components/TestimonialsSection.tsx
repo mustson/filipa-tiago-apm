@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
             <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>O que os viajantes dizem</p>
             <h2 
-                className="text-7xl md:text-9xl font-light tracking-tighter text-gray-900 mt-2"
+                className={`${design.headings.classes.h2} text-gray-900 mt-2`}
                 style={{ fontFamily: design.fonts.title }}
             >
                 Experiências Inesquecíveis

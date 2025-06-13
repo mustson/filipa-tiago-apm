@@ -47,7 +47,7 @@ const AboutSection = () => {
               Trabalhamos com os seus sonhos.
             </p>
             <h2
-              className="text-7xl md:text-9xl font-light tracking-tighter text-white mt-2"
+              className={`${design.headings.classes.h2} text-white mt-2`}
               style={{ fontFamily: design.fonts.title }}
             >
               Um parceiro nas suas viagens

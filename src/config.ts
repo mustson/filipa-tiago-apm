@@ -20,11 +20,28 @@ export const design = {
   },
   headings: {
     fontFamily: 'Inter, sans-serif',
-    fontSize: '60px',
-    lineHeight: '60px',
-    fontWeight: '400',
-    letterSpacing: 'normal',
-    color: '#111827'
+    // Tamanhos responsivos para mobile first
+    fontSize: {
+      base: '2.5rem',    // 40px no mobile
+      sm: '3rem',       // 48px em telas pequenas
+      md: '4rem',       // 64px em telas médias
+      lg: '5rem',       // 80px em telas grandes
+      xl: '6rem',       // 96px em telas extra grandes
+      '2xl': '7rem'     // 112px em telas 2xl
+    },
+    lineHeight: '1',
+    fontWeight: '300',
+    letterSpacing: '-0.05em',
+    color: '#111827',
+    // Classes prontas para uso direto nos componentes
+    classes: {
+      // Título principal (Hero)
+      hero: 'text-6xl md:text-7xl font-light tracking-tighter',
+      // Headings padrão
+      h1: 'text-7xl md:text-9xl font-light tracking-tighter',
+      h2: 'text-7xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-light tracking-tighter',
+      h3: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-light tracking-tight'
+    }
   },
   buttons: {
     primary: {

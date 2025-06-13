@@ -11,7 +11,7 @@ const TravelDesigner = () => {
         <div className="text-center">
           <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>A sua viagem, a minha assinatura.</p>
           <h2 
-            className="text-7xl md:text-9xl font-light tracking-tighter text-gray-900 mt-2"
+            className={`${design.headings.classes.h2} text-gray-900 mt-2`}
             style={{ fontFamily: design.fonts.title }}
           >
             Travel Designer
