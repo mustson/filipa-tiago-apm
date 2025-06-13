@@ -88,9 +88,18 @@ export const design = {
 export const siteConfig = {
   name: "Viagens em Família",
   tagline: "by Filipa & Tiago",
-  fullTitle: "Viagens personalizadas e autênticas by Filipa & Tiago",
+  fullTitle: "Viagens em Família by Filipa & Tiago",
   description: "Viagens personalizadas e autênticas, desenhadas por Filipa & Tiago, os seus especialistas em destinos.",
   keywords: "viagens personalizadas, roteiros autênticos, Filipa & Tiago, Viagens em Família, travel designers",
+  author: "Filipa & Tiago",
+  meta: {
+    title: "Viagens em Família by Filipa & Tiago | Roteiros Autênticos",
+    description: "Viagens personalizadas e autênticas, desenhadas por Filipa & Tiago, os seus especialistas em destinos.",
+    twitterHandle: "@filipaetiago",
+    twitterCard: "summary_large_image",
+    ogType: "website",
+    ogImage: "/branding/riviera_maia.avif"
+  },
   sections: {
     hero: {
       titleStart: "Viagens ",

@@ -1,13 +1,23 @@
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
-import { agentConfig } from './config.ts';
+import { agentConfig, siteConfig } from './config.ts';
 import './index.css'
 
-document.title = `${agentConfig.fullName} Travel Designer`;
-document.querySelector('meta[name="description"]')?.setAttribute('content', `${agentConfig.fullName} Travel Agent`);
-document.querySelector('meta[name="author"]')?.setAttribute('content', agentConfig.fullName);
-document.querySelector('meta[property="og:title"]')?.setAttribute('content', `${agentConfig.fullName} Travel Designer`);
-document.querySelector('meta[property="og:description"]')?.setAttribute('content', `${agentConfig.fullName} Travel Agent`);
-document.querySelector('meta[name="twitter:site"]')?.setAttribute('content', agentConfig.twitterHandle);
+document.title = siteConfig.meta.title;
+document.querySelector('meta[name="description"]')?.setAttribute('content', siteConfig.meta.description);
+document.querySelector('meta[name="author"]')?.setAttribute('content', siteConfig.author);
+document.querySelector('meta[name="keywords"]')?.setAttribute('content', siteConfig.keywords);
+
+// Open Graph / Facebook
+document.querySelector('meta[property="og:title"]')?.setAttribute('content', siteConfig.meta.title);
+document.querySelector('meta[property="og:description"]')?.setAttribute('content', siteConfig.meta.description);
+document.querySelector('meta[property="og:image"]')?.setAttribute('content', siteConfig.meta.ogImage);
+document.querySelector('meta[property="og:type"]')?.setAttribute('content', siteConfig.meta.ogType);
+
+// Twitter
+document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', siteConfig.meta.title);
+document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', siteConfig.meta.description);
+document.querySelector('meta[name="twitter:site"]')?.setAttribute('content', siteConfig.meta.twitterHandle);
+document.querySelector('meta[name="twitter:card"]')?.setAttribute('content', siteConfig.meta.twitterCard);
 
 createRoot(document.getElementById("root")!).render(<App />);
