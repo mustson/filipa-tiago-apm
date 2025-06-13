@@ -26,8 +26,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="h-screen bg-white px-0 sm:px-4 flex items-center justify-center">
-      <div className="relative w-full h-[90vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
+    <section id="about" className="min-h-screen pt-20 sm:pt-28 pb-16 sm:pb-20 bg-white px-0 sm:px-4 flex items-center justify-center">
+      <div className="relative w-full min-h-[90vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
         {/* Background image */}
         <div className="absolute inset-0 w-full h-full">
           <img 
@@ -40,24 +40,24 @@ const AboutSection = () => {
         {/* Dark overlay */}
         <div className="absolute inset-0 z-10 bg-black/70"></div>
         
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col justify-center items-center text-center">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col justify-center items-center text-center mt-8">
           {/* Main content */}
-          <div className="mb-16 max-w-4xl">
+          <div className="mb-10 sm:mb-16 max-w-4xl">
             <h2 
-              className="font-normal leading-tight tracking-tight mb-6"
+              className="font-normal tracking-tight mb-9"
               style={{ 
                 fontFamily: design.headings.fontFamily,
                 fontSize: design.headings.fontSize,
-                lineHeight: design.headings.lineHeight,
+                lineHeight: '1.1', // Usando um line-height menor para melhor balanceamento
                 fontWeight: design.headings.fontWeight,
                 letterSpacing: design.headings.letterSpacing,
                 color: 'white'
               }}
             >
-              Um parceiro <span className="text-cyan-700">nas suas viagens</span>
+              Um parceiro <span className="text-cyan-700 block mt-2">nas suas viagens</span>
             </h2>
             
-            <div className="space-y-4 text-lg text-white/90 max-w-2xl mx-auto" style={{ fontFamily: design.fonts.body }}>
+            <div className="space-y-3 text-lg text-white/90 max-w-2xl mx-auto" style={{ fontFamily: design.fonts.body, lineHeight: '1.4' }}>
               <p>Trabalhamos com os seus sonhos, não em vez deles.</p>
               <p>Ao gerir logística e segurança, o prazer de viajar volta a ser seu.</p>
               <p>Explore, descubra e crie memórias.</p>
@@ -65,21 +65,21 @@ const AboutSection = () => {
           </div>
 
           {/* Feature cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto w-full px-2 sm:px-4">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
                 <div 
                   key={index}
-                  className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300"
+                  className="bg-white/10 backdrop-blur-lg rounded-xl py-6 px-4 sm:p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300"
                 >
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-center mb-3 sm:mb-4">
                     <IconComponent className="w-8 h-8 text-cyan-700" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2" style={{ fontFamily: design.fonts.title }}>
+                  <h3 className="text-lg sm:text-xl font-normal text-white mb-1 sm:mb-2" style={{ fontFamily: design.fonts.title }}>
                     {feature.title}
                   </h3>
-                  <p className="text-white/80 text-sm" style={{ fontFamily: design.fonts.body }}>
+                  <p className="text-white/80 text-xs sm:text-sm" style={{ fontFamily: design.fonts.body }}>
                     {feature.description}
                   </p>
                 </div>
