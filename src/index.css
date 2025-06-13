@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -103,15 +104,19 @@
 
 @layer components {
   .gradient-text {
-    color: #3B82F6;
+    color: #2563EB; /* Blue */
   }
 
-  .gradient-orange-purple {
-    background: linear-gradient(135deg, #0D9488 0%, #0F766E 25%, #0D9488 50%, #14B8A6 75%, #2DD4BF 100%);
+  .gradient-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   }
 
-  .gradient-blue-purple {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  .gradient-red-blue {
+    background: linear-gradient(135deg, #DC2626 0%, #2563EB 100%);
+  }
+  
+  .gradient-blue-yellow {
+    background: linear-gradient(135deg, #2563EB 0%, #EAB308 100%);
   }
 
   .noise-overlay {
@@ -135,7 +140,7 @@
 
   .hero-beach-bg {
     background-image: 
-      linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(139, 92, 246, 0.8) 100%),
+      linear-gradient(135deg, rgba(220, 38, 38, 0.8) 0%, rgba(37, 99, 235, 0.7) 100%),
       url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=80');
     background-size: cover;
     background-position: center;

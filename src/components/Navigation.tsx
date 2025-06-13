@@ -22,9 +22,9 @@ const Navigation = () => {
           <div className="flex-1 flex items-center pl-4 sm:pl-6 md:pl-10">
             <a href="#" className="flex items-center py-3 sm:py-4">
               <img 
-                src="/branding/logo_hugo_ramos.png" 
+                src="/branding/filipa_tiago_apm.png" 
                 alt={`${agentConfig.fullName} - ${siteConfig.tagline}`}
-                className="h-14 w-auto sm:h-12"
+                className={`${design.logo.mobile.height} w-auto sm:${design.logo.desktop.height}`}
               />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { agentConfig, design } from '@/config';
+import { agentConfig, design, siteConfig } from '@/config';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../styles/hero.css';
 
@@ -20,8 +20,8 @@ const HeroSection = () => {
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
             <img 
-              src={agentConfig.heroImageUrl}
-              alt="Paisagem de viagem"
+              src="/branding/riviera_maia.avif"
+              alt="Riviera Maya"
               className="w-full h-full object-cover object-center"
               style={{
                 minWidth: '100%',
@@ -34,29 +34,31 @@ const HeroSection = () => {
             />
           </div>
           
-          {/* Gradient overlay for all screens - reforçado para mobile */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-blue-950/90 via-blue-900/70 to-blue-950/20 sm:from-blue-950/80 sm:via-blue-900/40 sm:to-transparent"></div>
+          {/* Gradient overlay for all screens - using configuration from design file */}
+          <div className={`absolute inset-0 z-10 bg-gradient-to-b ${design.heroGradients.mobile} sm:${design.heroGradients.desktop}`}></div>
           
 
           
-          <div className="relative z-20 w-full max-w-7xl mx-auto px-3 sm:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
+          <div className="relative z-20 w-full mx-auto px-2 md:px-4 h-full flex flex-col sm:justify-center justify-start pt-[8vh] sm:pt-0 items-center">
             {/* Main content - Top aligned on mobile, centered on desktop */}
-            <div className="text-center space-y-6 sm:space-y-8 max-w-4xl">
+            <div className="text-center space-y-6 sm:space-y-8 w-full">
               <h1
-                className={`${design.headings.classes.hero} text-white mt-2 md:max-w-5xl md:mx-auto`}
+                className={`${design.headings.classes.hero} text-white mt-2 w-full mx-auto px-4 md:px-12`}
                 style={{ fontFamily: design.fonts.title }}
               >
-                Roteiros autênticos, criados por quem <span style={{ color: design.colors.highlight }}>vive para viajar</span>
+                {siteConfig.sections.hero.titleStart}
+                <span style={{ color: '#EAB308' }}>{siteConfig.sections.hero.titleHighlight}</span>
+                {siteConfig.sections.hero.titleEnd}
               </h1>
               
-              <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-                Fuja do óbvio com viagens personalizadas que transformam.<br /> O seu próximo destino começa aqui.
+              <p className="text-xl text-white/90 w-full max-w-5xl mx-auto leading-relaxed px-4">
+                {siteConfig.sections.hero.description}
               </p>
               
               <div className="flex gap-6 items-center justify-center">
                 <Button 
                   onClick={scrollToPackages} 
-                  className="bg-cyan-700 hover:bg-cyan-800 text-white px-8 py-6 text-lg font-normal rounded-xl transition-all duration-300 shadow-none"
+                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg font-normal rounded-xl transition-all duration-300 shadow-none"
                 >
                   Explorar Destinos
                 </Button>
@@ -71,13 +73,13 @@ const HeroSection = () => {
 
               {/* Social Media Icons */}
               <div className="mt-8 flex justify-center items-center gap-4">
-                <a href="https://www.instagram.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                <a href="https://www.instagram.com/filipa_tiago_apm" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
                     <Instagram className="h-5 w-5" />
                 </a>
-                <a href="https://www.facebook.com/brunolopestravel" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                <a href="https://www.facebook.com/filipa.tiago.viagensemfamilia" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
                     <Facebook className="h-5 w-5" />
                 </a>
-                <a href="https://www.linkedin.com/in/bruno-lopes-a55a35b/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
+                <a href="https://www.linkedin.com/company/viagensemfamilia" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-full p-3 transition-all duration-300 backdrop-blur-sm border border-white/20">
                     <Linkedin className="h-5 w-5" />
                 </a>
               </div>
@@ -88,17 +90,17 @@ const HeroSection = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
                   <h3 className="text-xl font-normal text-white mb-2">Curadoria Especializada</h3>
-                  <p className="text-white/80">Esqueça os guias turísticos. Crio roteiros baseados em experiências reais, para que você conheça o coração de cada destino.</p>
+                  <p className="text-white/80">Esqueça os guias turísticos. Criamos roteiros baseados em experiências reais, para que você conheça o coração de cada destino.</p>
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
                   <h3 className="text-xl font-normal text-white mb-2">Planejamento Completo</h3>
-                  <p className="text-white/80">Do seu hotel aos seus jantares, cuido de cada detalhe. A sua única preocupação é aproveitar a viagem.</p>
+                  <p className="text-white/80">Do seu hotel aos seus jantares, cuidamos de cada detalhe. A sua única preocupação é aproveitar a viagem.</p>
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:transform hover:scale-[1.02] cursor-pointer">
                   <h3 className="text-xl font-normal text-white mb-2">Suporte Total</h3>
-                  <p className="text-white/80">Estou disponível 24/7 durante a sua viagem para garantir que tudo corra perfeitamente. Viaje com tranquilidade.</p>
+                  <p className="text-white/80">Estamos disponíveis 24/7 durante a sua viagem para garantir que tudo corra perfeitamente. Viaje com tranquilidade.</p>
                 </div>
               </div>
             </div>

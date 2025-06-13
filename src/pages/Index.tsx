@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import TravelPackages from '@/components/TravelPackages';
 import AboutSection from '@/components/AboutSection';
-import TravelDesigner from '@/components/TravelDesigner';
+// TravelDesigner component removed as requested
 import WhyHugoSection from '@/components/WhyBrunoSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
@@ -16,7 +16,6 @@ const Index = () => {
       <TravelPackages />
       <WhyHugoSection />
       <TestimonialsSection />
-      <TravelDesigner />
       <AboutSection />
       <ContactSection />
       <FloatingWhatsApp />

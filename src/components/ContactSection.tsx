@@ -14,7 +14,7 @@ const ContactSection = () => {
 
   const handleEmailContact = () => {
     const subject = "Pedido de Informações de Viagem";
-    const body = `Olá ${agentConfig.firstName},\n\nGostaria de obter mais informações sobre os seus serviços de planeamento de viagens.\n\nCumprimentos,`;
+    const body = `Olá ${agentConfig.firstName},\n\nGostaria de obter mais informações sobre os vossos serviços de planeamento de viagens.\n\nCumprimentos,`;
     const mailtoUrl = `mailto:${agentConfig.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
   };
@@ -68,7 +68,7 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <p className={`text-${design.colors.textLight} mb-6`} style={{ fontFamily: design.fonts.body }}>
-                Prefere detalhar as suas ideias por escrito? Envie um email e responderei com todas as informações.
+                Prefere detalhar as suas ideias por escrito? Envie um email e responderemos com todas as informações.
               </p>
               <Button 
                 onClick={handleEmailContact} 

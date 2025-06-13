@@ -31,8 +31,8 @@ const AboutSection = () => {
         {/* Background image */}
         <div className="absolute inset-0 w-full h-full">
           <img 
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Paisagem de montanha"
+            src="https://images.unsplash.com/photo-1607646624191-a4a15eee248d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Praia tropical"
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
               className={`${design.headings.classes.h2} text-white mt-2`}
               style={{ fontFamily: design.fonts.title }}
             >
-              Um parceiro nas suas viagens
+              Parceiros nas suas viagens
             </h2>
             <div className="mt-6 space-y-3 text-base sm:text-lg text-white/90 max-w-md mx-auto px-4" style={{ fontFamily: design.fonts.body, lineHeight: '1.5' }}>
               <p>Ao gerir logística e segurança, o prazer de viajar volta a ser seu. Explore, descubra e crie memórias.</p>
@@ -67,7 +67,7 @@ const AboutSection = () => {
                   className="bg-white/10 backdrop-blur-lg rounded-xl py-6 px-4 sm:p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300"
                 >
                   <div className="flex justify-center mb-3 sm:mb-4">
-                    <IconComponent className="w-8 h-8 text-cyan-700" />
+                    <IconComponent className="w-8 h-8 text-yellow-500" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-normal text-white mb-1 sm:mb-2" style={{ fontFamily: design.fonts.title }}>
                     {feature.title}

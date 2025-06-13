@@ -21,7 +21,8 @@ export default {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
 				brockmann: ['Brockmann', '"SF Pro Display"', 'Inter', 'sans-serif'],
-				title: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+				title: ['"Playfair Display"', 'serif'],
+				heading: ['"Playfair Display"', 'serif'],
 				body: ['Inter', 'sans-serif'],
 			},
 			colors: {
