@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
               }}
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden ring-2 ring-orange-500/20">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden ring-2 ring-cyan-700/20">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
                 <p className="text-sm" style={{ color: design.colors.textLight }}>{testimonial.location}</p>
                 <div className="flex justify-center space-x-1 mt-2">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <svg key={i} className={`w-4 h-4 text-${design.colors.primary} fill-current`} viewBox="0 0 20 20">
+                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                     </svg>
                   ))}

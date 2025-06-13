@@ -64,7 +64,7 @@ const WhyHugoSection = () => {
           {reasons.map((reason, index) => (
             <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl transition-all duration-300 shadow-sm">
               <CardHeader>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl bg-orange-500 text-white mb-4">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl bg-cyan-700 text-white mb-4">
                   <reason.icon className="w-6 h-6" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900" style={{ fontFamily: design.fonts.title }}>{reason.title}</CardTitle>

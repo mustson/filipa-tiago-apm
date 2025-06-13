@@ -6,15 +6,10 @@ const TravelDesigner = () => {
     <section className={`bg-gray-100 py-24 sm:py-32`}>
       <div className="max-w-4xl mx-auto px-6 text-center">
         
-        <p 
-          className="text-lg leading-8 text-gray-600 mb-4"
-          style={{ fontFamily: design.fonts.body }}
-        >
-          A sua viagem, a sua assinatura.
-        </p>
+        
 
         <div className="text-center">
-          <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>A sua viagem, a sua assinatura.</p>
+          <p className="text-lg text-gray-600" style={{ fontFamily: design.fonts.body }}>A sua viagem, a minha assinatura.</p>
           <h2 
             className="text-7xl md:text-9xl font-light tracking-tighter text-gray-900 mt-2"
             style={{ fontFamily: design.fonts.title }}

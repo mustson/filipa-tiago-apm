@@ -1,14 +1,16 @@
 export const design = {
   colors: {
-    primary: 'orange-500',
-    primaryHover: 'orange-600',
+    // primary: 'orange-500',  // Cor anterior (laranja)
+    // primary: 'teal-400',    // Cor anterior (azul turquesa claro)
+    primary: 'cyan-700',      // Azul mais escuro para melhor contraste
+    primaryHover: 'cyan-800', // Azul mais escuro no hover
     secondary: 'slate-800',
     secondaryHover: 'slate-900',
     text: 'slate-800',
     textLight: 'slate-600',
     background: '[#EAEAEA]',
     cardBackground: 'white',
-    accent: 'orange-400',
+    accent: 'teal-400',
     headingColor: '#111827',
   },
   fonts: {
@@ -26,9 +28,10 @@ export const design = {
   buttons: {
     primary: {
       text: "Saber mais via WhatsApp",
-      bg: 'bg-orange-500',
-      hover: 'hover:bg-orange-600',
-      textColor: 'text-white'
+      bg: 'bg-cyan-700',
+      hover: 'hover:bg-cyan-800',
+      textColor: 'text-white',
+      fontWeight: 'font-normal'  // Removendo negrito
     },
     secondary: {
       text: "Enviar um Email",
@@ -38,9 +41,10 @@ export const design = {
     },
     whatsapp: {
       text: "Iniciar no WhatsApp",
-      bg: 'bg-orange-600',
-      hover: 'hover:bg-orange-700',
-      textColor: 'text-white'
+      bg: 'bg-cyan-700',
+      hover: 'hover:bg-cyan-800',
+      textColor: 'text-white',
+      fontWeight: 'font-normal'  // Removendo negrito
     }
   }
 };
@@ -79,7 +83,7 @@ export const agentConfig = {
   whatsapp: "+351912345678",
   consultationFormUrl: "https://www.icligo.com/forms/contact-us/become-a-consultant?utm_source=pRs2kAaQ&utm_campaign=registration",
   twitterHandle: "@nomadwise",
-  instagramHandle: "@nomadwise.travel",
+  instagramHandle: "@hugoramos_nomadwise/",
   facebookHandle: "/nomadwise.travel",
   linkedinHandle: "/company/nomadwise",
   heroImageUrl: "https://plus.unsplash.com/premium_photo-1707030602987-8ca280726bdb?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

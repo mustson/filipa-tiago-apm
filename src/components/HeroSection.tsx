@@ -15,7 +15,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="min-h-screen bg-white px-0 sm:px-4 pt-16 sm:pt-24 pb-16 flex items-center justify-center">
+      <section id="home" className="min-h-screen bg-white px-0 sm:px-4 pt-24 sm:pt-24 pb-16 flex items-center justify-center">
         <div className="relative w-full h-auto min-h-[100vh] sm:h-[75vh] rounded-2xl overflow-hidden mx-4 sm:mx-0">
           {/* Full width background image */}
           <div className="absolute inset-0 w-full h-full">
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 <h1 className="text-5xl md:text-6xl lg:text-7xl leading-tight tracking-wide text-white">
                 Roteiros <span className="font-bold">autênticos</span>,
                 <br />
-                criados por quem <span className="font-bold text-orange-400">vive para viajar.</span>
+                criados por quem <span className="font-bold text-cyan-700">vive para viajar.</span>
               </h1>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -55,7 +55,7 @@ const HeroSection = () => {
               <div className="flex gap-6 items-center justify-center">
                 <Button 
                   onClick={scrollToPackages} 
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 shadow-none"
+                  className="bg-cyan-700 hover:bg-cyan-800 text-white px-8 py-6 text-lg font-normal rounded-xl transition-all duration-300 shadow-none"
                 >
                   Explorar Destinos
                 </Button>

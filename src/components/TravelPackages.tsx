@@ -47,18 +47,20 @@ const TravelPackages = () => {
         </div>
 
         <Tabs defaultValue={travelPackages.categories[0].id} className="w-full">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-10 bg-transparent p-0 rounded-none border-0 shadow-none">
-            {travelPackages.categories.map((category) => (
-              <TabsTrigger 
-                key={category.id} 
-                value={category.id} 
-                className="text-slate-400 data-[state=active]:text-slate-900 data-[state=active]:bg-transparent data-[state=active]:shadow-none rounded-none border-b-2 border-transparent data-[state=active]:border-orange-500 py-3 px-6 font-medium transition-all"
-                style={{ fontFamily: design.fonts.body }}
-              >
-                {category.name}
-              </TabsTrigger>
-            ))}
-          </TabsList>
+          <div className="relative w-full mb-10 overflow-hidden">
+            <TabsList className="flex justify-between overflow-x-auto whitespace-nowrap pb-2 bg-transparent rounded-none border-0 shadow-none scrollbar-hide touch-pan-x">
+              {travelPackages.categories.map((category) => (
+                <TabsTrigger 
+                  key={category.id} 
+                  value={category.id} 
+                  className="text-slate-400 data-[state=active]:text-slate-900 data-[state=active]:bg-transparent data-[state=active]:shadow-none rounded-none border-b-2 border-transparent data-[state=active]:border-cyan-700 py-3 px-4 sm:px-6 font-medium transition-all flex-shrink-0 flex-grow text-center min-w-[100px]"
+                  style={{ fontFamily: design.fonts.body }}
+                >
+                  {category.name}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
 
           {travelPackages.categories.map((category) => (
             <TabsContent key={category.id} value={category.id}>
@@ -102,7 +104,7 @@ const TravelPackages = () => {
                             </div>
                           ))}
                           {pkg.includes.length > 2 && (
-                            <p className={`text-orange-500 text-sm font-medium mt-2`} style={{ fontFamily: design.fonts.body }}>
+                            <p className={`text-teal-500 text-sm font-medium mt-2`} style={{ fontFamily: design.fonts.body }}>
                               +{pkg.includes.length - 2} mais incluído
                             </p>
                           )}
@@ -119,7 +121,7 @@ const TravelPackages = () => {
                           </div>
                           <Button 
                             onClick={() => handleWhatsAppContact(pkg.name)}
-                            className={`${design.buttons.primary.bg} ${design.buttons.primary.hover} ${design.buttons.primary.textColor} font-bold py-3 px-5 rounded-lg text-sm shadow-lg hover:shadow-orange-500/30 transition-all duration-300`}
+                            className={`${design.buttons.primary.bg} ${design.buttons.primary.hover} ${design.buttons.primary.textColor} font-normal py-3 px-5 rounded-lg text-sm shadow-lg hover:shadow-cyan-700/30 transition-all duration-300`}
                             style={{ fontFamily: design.fonts.body }}
                           >
                             {design.buttons.primary.text}

@@ -54,7 +54,7 @@ const AboutSection = () => {
                 color: 'white'
               }}
             >
-              Um parceiro <span className="text-orange-400">nas suas viagens</span>
+              Um parceiro <span className="text-cyan-700">nas suas viagens</span>
             </h2>
             
             <div className="space-y-4 text-lg text-white/90 max-w-2xl mx-auto" style={{ fontFamily: design.fonts.body }}>
@@ -74,7 +74,7 @@ const AboutSection = () => {
                   className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300"
                 >
                   <div className="flex justify-center mb-4">
-                    <IconComponent className="w-8 h-8 text-orange-400" />
+                    <IconComponent className="w-8 h-8 text-cyan-700" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2" style={{ fontFamily: design.fonts.title }}>
                     {feature.title}
